@@ -120,13 +120,33 @@ h2 {
   padding-bottom: 4px;
   border-bottom: 1px solid #ccc;
 }
+h3 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+h4 {
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
 .theme-0 h2, .theme-0 h3, .theme-0 h4, .theme-0 h5 {
   color: #666666;
   border-color: #f1f1f1;
 }
+.theme-1 h2, .theme-1 h3, .theme-1 h4, .theme-1 h5 {
+  color: #800000;
+  border-color: #ffcfcf;
+}
 .theme-2 h2, .theme-2 h3, .theme-2 h4, .theme-2 h5 {
   color: #000080;
   border-color: #000080;
+}
+.theme-3 h2, .theme-3 h3, .theme-3 h4, .theme-3 h5 {
+  color: #006000;
+  border-color: #c8ffc8;
+}
+.theme-4 h2, .theme-4 h3, .theme-4 h4, .theme-4 h5 {
+  color: #404000;
+  border-color: #cccca8;
 }
 #article {
   font-size: 20px;
@@ -140,16 +160,37 @@ table tr.header {
 .theme-0 table {
   color: #666666;
 }
+.theme-1 table {
+  color: #800000;
+}
 .theme-2 table {
   color: #000080;
+}
+.theme-3 table {
+  color: #006000;
+}
+.theme-4 table {
+  color: #404000;
 }
 .theme-0 table tr.header {
   background: #f1f1f1;
   border-bottom: 2px dotted #666666;
 }
+.theme-1 table tr.header {
+  background: #ffcfcf;
+  border-bottom: 2px dotted #800000;
+}
 .theme-2 table tr.header {
   background: #cfefff;
   border-bottom: 2px dotted #000080;
+}
+.theme-3 table tr.header {
+  background: #c8ffc8;
+  border-bottom: 2px dotted #006000;
+}
+.theme-4 table tr.header {
+  background: #cccca8;
+  border-bottom: 2px dotted #404000;
 }
 table tr.even {
   background: rgba(255, 255, 255, 0.1);
@@ -157,11 +198,20 @@ table tr.even {
 .theme-0 table tr.even {
   background: rgba(241, 241, 241, 0.5);
 }
+.theme-1 table tr.even {
+  background: rgba(255, 207, 207, 0.5);
+}
 .theme-2 table tr.even {
   background: rgba(207, 239, 255, 0.5);
 }
+.theme-3 table tr.even {
+  background: rgba(200, 255, 200, 0.5);
+}
+.theme-4 table tr.even {
+  background: rgba(241, 241, 241, 0.5);
+}
 table tr.odd {
-  background: rgba(240, 240, 240, 0.1);
+  background: rgba(204, 204, 168, 0.1);
 }
 
 #article-footer {
