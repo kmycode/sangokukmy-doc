@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>コマンド - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">コマンド</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="コマンドの実行">コマンドの実行</h2>
+        <p>三国志NETでは、武将が行動するときにコマンドを入力します。<br />
+        コマンドは、入力即実行されるわけではありません。例えば、</p>
+        <p><img src="assets/bas-command-1.png" alt="コマンドリスト" /></p>
+        <p>以上のように入力すると、</p>
+        <ul>
+        <li>今から112秒後（9時13分51秒）に商業発展を実行</li>
+        <li>9時23分51秒に農業開発を実行</li>
+        <li>9時33分51秒に商業発展を実行</li>
+        </ul>
+        <p>というふうに実行されます。</p>
+        <h3 id="更新時刻">更新時刻</h3>
+        <p>武将は、それぞれが自分の更新時刻を持ちます。上の例の場合、コマンドリストの先頭は54年2月となっていますが、処理は以下のように実行されます。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>実行時刻</th>
+        <th>実行内容</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>9時10分00秒</td>
+        <td>54年2月に切り替わる</td>
+        </tr>
+        <tr class="even">
+        <td>9時12分31秒</td>
+        <td>武将Aのコマンド実行</td>
+        </tr>
+        <tr class="odd">
+        <td>9時13分51秒</td>
+        <td>武将Bのコマンド実行</td>
+        </tr>
+        <tr class="even">
+        <td>9時17分30秒</td>
+        <td>武将Cのコマンド実行</td>
+        </tr>
+        <tr class="odd">
+        <td>9時20分00秒</td>
+        <td>54年3月に切り替わる</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>武将Bは、武将Aより後にコマンドが実行されます。また、武将Bは、武将Cより先にコマンドが実行されます。<br />
+        この順番は、戦争のときに重要になってくる場合があります。国の武将の更新時刻一覧は、国情報の武将から確認できます。</p>
+        <h3 id="更新開始">更新開始</h3>
+        <p>コマンドは、0年1月〜23年12月までの間には実行されません。<br />
+        その期間中に入力したコマンドは、24年1月以降に順次実行されます。</p>
+        <h2 id="入力できるコマンド">入力できるコマンド</h2>
+        <p><a href="bas-commands.html">コマンド一覧</a>より確認できます。</p>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

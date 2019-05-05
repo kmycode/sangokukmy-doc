@@ -149,7 +149,37 @@ h4 {
   border-color: #cccca8;
 }
 #article {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 24px;
+}
+li:before {
+  content: "•";
+  margin-right: 12px;
+}
+.theme-0 li:before {
+  color: #666666;
+}
+.theme-1 li:before {
+  color: #800000;
+}
+.theme-2 li:before {
+  color: #000080;
+}
+.theme-3 li:before {
+  color: #006000;
+}
+.theme-4 li:before {
+  color: #404000;
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  overflow: auto;
 }
 table th, table td {
   padding: 4px 16px;

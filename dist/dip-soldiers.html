@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>兵種一覧 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1">
+
+      <div id="category-group" class="category-pick category-pick-3">
+        <div class="category category-3">兵種一覧</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-3">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-3">
+        <h2 id="凡例">凡例</h2>
+        <ul>
+        <li>攻撃力、防御力は、いずれも武力に加算される値です</li>
+        <li>金は1小隊の徴兵に必要な費用です</li>
+        <li>技術はその兵種の徴兵に必要な都市技術です
+        <ul>
+        <li>ただし、コマンド入力時点の技術を見ます（実行時点の技術は考慮しません）</li>
+        <li>技術の高い都市でコマンド入力した後、技術の低い都市に移動しても徴兵できます</li>
+        </ul></li>
+        </ul>
+        <h2 id="武力基盤の兵種">武力基盤の兵種</h2>
+        <p>攻撃力の基礎計算に武力を用います。基本的には一部を除き武官向けの兵種です。</p>
+        <ul>
+        <li>雑兵・禁兵は、コマンド入力時ではなくコマンド実行時の都市を見ます。いずれも、コマンド入力時は雑兵を選択します</li>
+        </ul>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>種類</th>
+        <th>攻撃力</th>
+        <th>防御力</th>
+        <th>金</th>
+        <th>技術</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>雑兵</td>
+        <td>0</td>
+        <td>0</td>
+        <td>10</td>
+        <td>0</td>
+        <td>首都で実行すると禁兵が徴兵</td>
+        </tr>
+        <tr class="even">
+        <td>禁兵</td>
+        <td>10</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>雑兵徴兵コマを首都で実行時</td>
+        </tr>
+        <tr class="odd">
+        <td>軽歩兵</td>
+        <td>10</td>
+        <td>0</td>
+        <td>20</td>
+        <td>100</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>弓兵</td>
+        <td>0</td>
+        <td>10</td>
+        <td>30</td>
+        <td>200</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>軽騎兵</td>
+        <td>30</td>
+        <td>10</td>
+        <td>50</td>
+        <td>300</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>強弩兵</td>
+        <td>10</td>
+        <td>30</td>
+        <td>70</td>
+        <td>400</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>井闌</td>
+        <td>0</td>
+        <td>0</td>
+        <td>300</td>
+        <td>500</td>
+        <td>城壁・守兵・壁守兵と戦闘時、攻撃力 +200、防御力 +100</td>
+        </tr>
+        <tr class="even">
+        <td>重歩兵</td>
+        <td>50</td>
+        <td>30</td>
+        <td>120</td>
+        <td>600</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>重騎兵</td>
+        <td>60</td>
+        <td>40</td>
+        <td>150</td>
+        <td>700</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>連弩兵</td>
+        <td>90</td>
+        <td>30</td>
+        <td>200</td>
+        <td>800</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>壁守兵</td>
+        <td>0</td>
+        <td>知力</td>
+        <td>220</td>
+        <td>999</td>
+        <td>城塞都市以外徴兵不可</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="知力基盤の兵種">知力基盤の兵種</h2>
+        <p>攻撃力の基礎計算に知力を用います。文官向けの兵種です。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>種類</th>
+        <th>攻撃力</th>
+        <th>防御力</th>
+        <th>金</th>
+        <th>技術</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>神鬼兵</td>
+        <td>武力</td>
+        <td>0</td>
+        <td>100</td>
+        <td>500</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>文官重騎兵</td>
+        <td>60</td>
+        <td>40</td>
+        <td>180</td>
+        <td>900</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

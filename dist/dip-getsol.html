@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>徴兵と農民 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 offset-sm-1">
+
+      <div id="category-group" class="category-pick category-pick-3">
+        <div class="category category-3">徴兵と農民</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-3">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-3">
+        <h2 id="徴兵時の注意点">徴兵時の注意点</h2>
+        <p>徴兵を行うと、以下のものが減ります。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>減るもの</th>
+        <th>減る量</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>武将の金</td>
+        <td>兵種1小隊あたりの金 * 徴兵数。<a href="dip-soldiers.html">兵種一覧</a>も参照</td>
+        </tr>
+        <tr class="even">
+        <td>徴兵した都市の農民</td>
+        <td>徴兵数 * <code>5.45</code></td>
+        </tr>
+        <tr class="odd">
+        <td>徴兵した都市の民忠</td>
+        <td>徴兵数 / <code>10</code>（小数点以下切り捨て）</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="民忠と農民の回復">民忠と農民の回復</h2>
+        <h3 id="民忠の回復">民忠の回復</h3>
+        <p>仁官（人望の高い武将）による米施し、または緊急米施しコマンドによって民忠は回復します。</p>
+        <h3 id="農民の回復">農民の回復</h3>
+        <p>毎年1月、7月に、その時点の民忠に応じて農民が回復します。<br />
+        回復幅は通常、民忠100の場合<code>4000</code>です。</p>
+        <h3 id="徴兵量が回復量を上回る場合">徴兵量が回復量を上回る場合</h3>
+        <p>6ヶ月間に<code>733</code>人の徴兵がされると、徴兵量が回復量を上回り、毎年少しずつ農民数が減っていきます。<br />
+        この数字は武将1人では到達できませんが、同じ都市に武将が複数いると到達し、超える場合があります。<br />
+        農民が少なくなると徴兵できなくなりますので、徴兵は計画的に行う必要があります。</p>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>
