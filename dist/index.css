@@ -178,7 +178,7 @@ li:before {
 
 table {
   width: 100%;
-  min-width: 600px;
+  min-width: 700px;
   overflow: auto;
 }
 table th, table td {

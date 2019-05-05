@@ -44,6 +44,7 @@ category: 0
 * 都市施設
 * 首都
 * 政策
+  * [政策一覧](dom-policies.html)
   * 国庫
   * 諜報府
   * 政務庁
