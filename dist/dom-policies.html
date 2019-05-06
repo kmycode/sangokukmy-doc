@@ -36,7 +36,8 @@
 
       <div id="article" class="theme-2">
         <h2 id="政策の一覧">政策の一覧</h2>
-        <p>すべての国で、毎ターン政策ポイント +5。戦闘解除後に限り本籍武将数2以下で追加 +3</p>
+        <p>すべての国で、毎ターン政策ポイント <code>+5</code>。戦闘解除後に限り本籍武将数2以下で追加 <code>+3</code></p>
+        <h3 id="郡県制系">郡県制系</h3>
         <table>
         <thead>
         <tr class="header">
@@ -44,149 +45,180 @@
         <th>基本政策P</th>
         <th>必要政策</th>
         <th>追加効果</th>
-        <th>備考／関連</th>
         </tr>
         </thead>
         <tbody>
         <tr class="odd">
-        <td>郡県制</td>
+        <td><strong>郡県制</strong></td>
         <td>2000</td>
         <td></td>
         <td>大都市につき政策ポイント <code>+5</code></td>
-        <td></td>
         </tr>
         <tr class="even">
         <td>農業国家</td>
         <td>3000</td>
         <td>郡県制</td>
         <td>農業都市につき政策ポイント <code>+3</code><br>首都の下敷きが農業都市の場合追加 <code>+3</code></td>
-        <td></td>
         </tr>
         <tr class="odd">
         <td>商業国家</td>
         <td>3000</td>
         <td>郡県制</td>
         <td>商業都市につき政策ポイント <code>+3</code><br>首都の下敷きが商業都市の場合追加 <code>+3</code></td>
-        <td></td>
         </tr>
         <tr class="even">
         <td>城塞国家</td>
         <td>3000</td>
         <td>郡県制</td>
         <td>城塞都市につき政策ポイント <code>+3</code><br>首都の下敷きが城塞都市の場合追加 <code>+3</code></td>
-        <td></td>
         </tr>
+        </tbody>
+        </table>
+        <h3 id="内政系農業都市">内政系（農業都市）</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>基本政策P</th>
+        <th>必要政策</th>
+        <th>追加効果</th>
+        </tr>
+        </thead>
+        <tbody>
         <tr class="odd">
-        <td>貯蔵</td>
+        <td><strong>経済評論</strong></td>
+        <td>4000</td>
+        <td></td>
+        <td>蝗害、疫病被害軽減、金・米収入増大</td>
+        </tr>
+        <tr class="even">
+        <td>災害対策</td>
+        <td>3000</td>
+        <td></td>
+        <td>洪水、地震の被害軽減</td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="内政系商業都市">内政系（商業都市）</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>基本政策P</th>
+        <th>必要政策</th>
+        <th>追加効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><strong>貯蔵</strong></td>
         <td>4000</td>
         <td></td>
         <td>国庫最大 <code>+1M</code></td>
-        <td>国庫</td>
         </tr>
         <tr class="even">
         <td>地下貯蔵</td>
         <td>2000</td>
         <td>貯蔵</td>
         <td>国庫最大 <code>+1M</code></td>
-        <td>国庫</td>
         </tr>
         <tr class="odd">
         <td>胃の中</td>
         <td>2000</td>
         <td>地下貯蔵</td>
         <td>国庫最大 <code>+1M</code></td>
-        <td>国庫</td>
         </tr>
         <tr class="even">
         <td>血管の中</td>
         <td>3000</td>
         <td>胃の中</td>
         <td>国庫最大 <code>+1M</code></td>
-        <td>国庫</td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="人材系">人材系</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>基本政策P</th>
+        <th>必要政策</th>
+        <th>追加効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><strong>人材開発</strong></td>
+        <td>3000</td>
+        <td></td>
+        <td>政務官 <code>+1</code></td>
+        </tr>
+        <tr class="even">
+        <td>武官国家</td>
+        <td>1500</td>
+        <td>人材開発</td>
+        <td>武官数につき毎ターン政策ポイント <code>+2</code></td>
+        </tr>
+        <tr class="odd">
+        <td>文官国家</td>
+        <td>2000</td>
+        <td>人材開発</td>
+        <td>文官数につき毎ターン政策ポイント <code>+4</code></td>
+        </tr>
+        <tr class="even">
+        <td>人情国家</td>
+        <td>2000</td>
+        <td>文官国家</td>
+        <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
         </tr>
         <tr class="odd">
         <td>密偵</td>
         <td>4000</td>
         <td></td>
         <td>斥候 <code>+2</code></td>
-        <td>諜報府</td>
         </tr>
-        <tr class="even">
-        <td>人材開発</td>
-        <td>3000</td>
-        <td></td>
-        <td>政務官 <code>+1</code></td>
-        <td>政務庁</td>
+        </tbody>
+        </table>
+        <h3 id="軍事系城塞都市">軍事系（城塞都市）</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>基本政策P</th>
+        <th>必要政策</th>
+        <th>追加効果</th>
         </tr>
+        </thead>
+        <tbody>
         <tr class="odd">
-        <td>武官国家</td>
-        <td>1500</td>
-        <td>人材開発</td>
-        <td>武官数につき毎ターン政策ポイント <code>+2</code></td>
-        <td></td>
-        </tr>
-        <tr class="even">
-        <td>文官国家</td>
-        <td>2000</td>
-        <td>人材開発</td>
-        <td>文官数につき毎ターン政策ポイント <code>+4</code></td>
-        <td></td>
-        </tr>
-        <tr class="odd">
-        <td>人情国家</td>
-        <td>2000</td>
-        <td>文官国家</td>
-        <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
-        <td></td>
-        </tr>
-        <tr class="even">
-        <td>経済評論</td>
-        <td>4000</td>
-        <td></td>
-        <td>蝗害、疫病被害軽減、金・米収入増大</td>
-        <td>イベント</td>
-        </tr>
-        <tr class="odd">
-        <td>災害対策</td>
-        <td>3000</td>
-        <td></td>
-        <td>洪水、地震の被害軽減</td>
-        <td>イベント</td>
-        </tr>
-        <tr class="even">
-        <td>賊の監視</td>
+        <td><strong>賊の監視</strong></td>
         <td>3000</td>
         <td></td>
         <td>賊の被害軽減</td>
-        <td>イベント</td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>攻防の礎</td>
         <td>2000</td>
         <td>賊の監視</td>
         <td>守兵のランク B</td>
-        <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>賊の殲滅</td>
         <td>2000</td>
         <td>賊の監視</td>
         <td>賊発生時、都市につき政策ポイント <code>+30</code></td>
-        <td>イベント</td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>土塁</td>
         <td>2000</td>
         <td>攻防の礎、人材開発</td>
         <td>守兵のランク C</td>
-        <td>兵種</td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>石城</td>
         <td>3000</td>
         <td>土塁、武官国家</td>
         <td>守兵のランク D</td>
-        <td>兵種</td>
         </tr>
         </tbody>
         </table>
