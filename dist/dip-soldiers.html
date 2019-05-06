@@ -56,6 +56,8 @@
         <th>種類</th>
         <th>攻撃力</th>
         <th>防御力</th>
+        <th>城攻</th>
+        <th>城防</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -66,6 +68,8 @@
         <td>雑兵</td>
         <td>0</td>
         <td>0</td>
+        <td></td>
+        <td></td>
         <td>10</td>
         <td>0</td>
         <td>首都で実行すると禁兵が徴兵</td>
@@ -74,6 +78,8 @@
         <td>禁兵</td>
         <td>10</td>
         <td>10</td>
+        <td></td>
+        <td></td>
         <td>10</td>
         <td>0</td>
         <td>雑兵徴兵コマを首都で実行時</td>
@@ -82,6 +88,8 @@
         <td>軽歩兵</td>
         <td>10</td>
         <td>0</td>
+        <td></td>
+        <td></td>
         <td>20</td>
         <td>100</td>
         <td></td>
@@ -90,6 +98,8 @@
         <td>弓兵</td>
         <td>0</td>
         <td>10</td>
+        <td></td>
+        <td></td>
         <td>30</td>
         <td>200</td>
         <td></td>
@@ -98,6 +108,8 @@
         <td>軽騎兵</td>
         <td>30</td>
         <td>10</td>
+        <td></td>
+        <td></td>
         <td>50</td>
         <td>300</td>
         <td></td>
@@ -106,6 +118,8 @@
         <td>強弩兵</td>
         <td>10</td>
         <td>30</td>
+        <td></td>
+        <td></td>
         <td>70</td>
         <td>400</td>
         <td></td>
@@ -114,14 +128,18 @@
         <td>井闌</td>
         <td>0</td>
         <td>0</td>
+        <td>200</td>
+        <td>100</td>
         <td>300</td>
         <td>500</td>
-        <td>城壁・守兵・壁守兵と戦闘時、攻撃力 +200、防御力 +100</td>
+        <td></td>
         </tr>
         <tr class="even">
         <td>重歩兵</td>
         <td>50</td>
         <td>30</td>
+        <td></td>
+        <td></td>
         <td>120</td>
         <td>600</td>
         <td></td>
@@ -130,6 +148,8 @@
         <td>重騎兵</td>
         <td>60</td>
         <td>40</td>
+        <td></td>
+        <td></td>
         <td>150</td>
         <td>700</td>
         <td></td>
@@ -138,6 +158,8 @@
         <td>連弩兵</td>
         <td>90</td>
         <td>30</td>
+        <td></td>
+        <td></td>
         <td>200</td>
         <td>800</td>
         <td></td>
@@ -146,9 +168,11 @@
         <td>壁守兵</td>
         <td>0</td>
         <td>知力</td>
+        <td></td>
+        <td></td>
         <td>220</td>
         <td>999</td>
-        <td>城塞都市以外徴兵不可</td>
+        <td></td>
         </tr>
         </tbody>
         </table>
@@ -160,6 +184,8 @@
         <th>種類</th>
         <th>攻撃力</th>
         <th>防御力</th>
+        <th>城攻</th>
+        <th>城防</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -170,6 +196,8 @@
         <td>神鬼兵</td>
         <td>武力</td>
         <td>0</td>
+        <td></td>
+        <td></td>
         <td>100</td>
         <td>500</td>
         <td></td>
@@ -178,8 +206,108 @@
         <td>文官重騎兵</td>
         <td>60</td>
         <td>40</td>
+        <td></td>
+        <td></td>
         <td>180</td>
         <td>900</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="異民族の兵種">異民族の兵種</h2>
+        <p>異民族の武官は、以下の兵種を用います。人間は徴兵できません。<br />
+        技術が<code>200</code>未満の場合は、軽歩兵を徴兵します。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>種類</th>
+        <th>攻撃力</th>
+        <th>防御力</th>
+        <th>城攻</th>
+        <th>城防</th>
+        <th>金</th>
+        <th>技術</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>異民族兵A</td>
+        <td>30</td>
+        <td>20</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>200</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>異民族兵B</td>
+        <td>40</td>
+        <td>30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>500</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>異民族兵C</td>
+        <td>60</td>
+        <td>40</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>800</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="蛮族の兵種">蛮族の兵種</h2>
+        <p>蛮族の武官は、以下の兵種を用います。人間は徴兵できません。<br />
+        技術が<code>200</code>未満の場合は、軽歩兵を徴兵します。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>種類</th>
+        <th>攻撃力</th>
+        <th>防御力</th>
+        <th>城攻</th>
+        <th>城防</th>
+        <th>金</th>
+        <th>技術</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>賊兵A</td>
+        <td>10</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>200</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>賊兵B</td>
+        <td>20</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>500</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>賊兵C</td>
+        <td>30</td>
+        <td>10</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>700</td>
         <td></td>
         </tr>
         </tbody>
