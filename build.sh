@@ -13,7 +13,7 @@ do
   html_file_name=${string_filename_without_extension}.html
   html_output_path=${html_path}/${html_file_name}
 
-  pandoc ./$path -s -f markdown_github+yaml_metadata_block -t html --template=./assets/template -o ./dist/${html_output_path}
+  pandoc ./$path -s -f markdown_github+yaml_metadata_block+footnotes -t html --template=./assets/template -o ./dist/${html_output_path}
 done
 
 cp -r ./src/assets ./dist
