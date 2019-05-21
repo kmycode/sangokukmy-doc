@@ -45,6 +45,37 @@
         <li>技術の高い都市でコマンド入力した後、技術の低い都市に移動しても徴兵できます</li>
         </ul></li>
         </ul>
+        <h3 id="各パラメータについて">各パラメータについて</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>パラメータ名</th>
+        <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>攻撃力</td>
+        <td>常に加算される攻撃力。武官向けは武力、文官向けは知力が別途加算</td>
+        </tr>
+        <tr class="even">
+        <td>防御力</td>
+        <td>常に加算される防御力</td>
+        </tr>
+        <tr class="odd">
+        <td>城壁攻撃力</td>
+        <td>対戦相手が城壁だった場合、追加される攻撃力</td>
+        </tr>
+        <tr class="even">
+        <td>城壁防御力</td>
+        <td>対戦相手が城壁だった場合、追加される防御力</td>
+        </tr>
+        <tr class="odd">
+        <td>連戦確率</td>
+        <td>戦闘に勝利した場合の連戦確率。単位は <code>%</code></td>
+        </tr>
+        </tbody>
+        </table>
         <h2 id="武力基盤の兵種">武力基盤の兵種</h2>
         <p>攻撃力の基礎計算に武力を用います。基本的には一部を除き武官向けの兵種です。</p>
         <ul>
@@ -54,10 +85,11 @@
         <thead>
         <tr class="header">
         <th>種類</th>
-        <th>攻撃力</th>
-        <th>防御力</th>
+        <th>攻</th>
+        <th>防</th>
         <th>城攻</th>
         <th>城防</th>
+        <th>連確</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -70,6 +102,7 @@
         <td>0</td>
         <td></td>
         <td></td>
+        <td></td>
         <td>10</td>
         <td>0</td>
         <td>首都で実行すると禁兵が徴兵</td>
@@ -78,6 +111,7 @@
         <td>禁兵</td>
         <td>10</td>
         <td>10</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>10</td>
@@ -90,6 +124,7 @@
         <td>0</td>
         <td></td>
         <td></td>
+        <td></td>
         <td>20</td>
         <td>100</td>
         <td></td>
@@ -100,74 +135,93 @@
         <td>10</td>
         <td></td>
         <td></td>
+        <td></td>
         <td>30</td>
         <td>200</td>
         <td></td>
         </tr>
         <tr class="odd">
+        <td>義勇兵</td>
+        <td>30</td>
+        <td>20</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>20</td>
+        <td>200</td>
+        <td>政策が必要</td>
+        </tr>
+        <tr class="even">
         <td>軽騎兵</td>
         <td>30</td>
         <td>10</td>
         <td></td>
         <td></td>
+        <td>1.8</td>
         <td>50</td>
         <td>300</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>強弩兵</td>
         <td>10</td>
         <td>30</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>70</td>
         <td>400</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>井闌</td>
         <td>0</td>
         <td>0</td>
         <td>200</td>
+        <td></td>
         <td>100</td>
         <td>300</td>
         <td>500</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>重歩兵</td>
         <td>50</td>
         <td>30</td>
         <td></td>
         <td></td>
+        <td>4</td>
         <td>120</td>
         <td>600</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>重騎兵</td>
         <td>60</td>
         <td>40</td>
         <td></td>
         <td></td>
+        <td>6</td>
         <td>150</td>
         <td>700</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>連弩兵</td>
         <td>90</td>
         <td>30</td>
         <td></td>
         <td></td>
+        <td>4</td>
         <td>200</td>
         <td>800</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>壁守兵</td>
         <td>0</td>
         <td>知力</td>
+        <td></td>
         <td></td>
         <td></td>
         <td>220</td>
@@ -182,10 +236,11 @@
         <thead>
         <tr class="header">
         <th>種類</th>
-        <th>攻撃力</th>
-        <th>防御力</th>
+        <th>攻</th>
+        <th>防</th>
         <th>城攻</th>
         <th>城防</th>
+        <th>連確</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -198,6 +253,7 @@
         <td>0</td>
         <td></td>
         <td></td>
+        <td></td>
         <td>100</td>
         <td>500</td>
         <td></td>
@@ -208,6 +264,7 @@
         <td>40</td>
         <td></td>
         <td></td>
+        <td>2</td>
         <td>180</td>
         <td>900</td>
         <td></td>
@@ -221,10 +278,11 @@
         <thead>
         <tr class="header">
         <th>種類</th>
-        <th>攻撃力</th>
-        <th>防御力</th>
+        <th>攻</th>
+        <th>防</th>
         <th>城攻</th>
         <th>城防</th>
+        <th>連確</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -238,6 +296,7 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>200</td>
         <td></td>
         </tr>
@@ -247,6 +306,7 @@
         <td>30</td>
         <td></td>
         <td></td>
+        <td>4</td>
         <td></td>
         <td>500</td>
         <td></td>
@@ -257,6 +317,7 @@
         <td>40</td>
         <td></td>
         <td></td>
+        <td>7</td>
         <td></td>
         <td>800</td>
         <td></td>
@@ -270,10 +331,11 @@
         <thead>
         <tr class="header">
         <th>種類</th>
-        <th>攻撃力</th>
-        <th>防御力</th>
+        <th>攻</th>
+        <th>防</th>
         <th>城攻</th>
         <th>城防</th>
+        <th>連確</th>
         <th>金</th>
         <th>技術</th>
         <th>備考</th>
@@ -287,6 +349,7 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>200</td>
         <td></td>
         </tr>
@@ -297,6 +360,7 @@
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>500</td>
         <td></td>
         </tr>
@@ -304,6 +368,7 @@
         <td>賊兵C</td>
         <td>30</td>
         <td>10</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>

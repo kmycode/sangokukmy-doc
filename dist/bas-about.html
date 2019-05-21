@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>三国志NETとは - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">三国志NETとは</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="歴史">歴史</h2>
+        <p>三国志NETは、2000年代にmaccyu氏の制作したゲームプログラムです。<br />
+        氏がゲームプログラムの頒布、および各自サイトへの設置を認めたため、様々なタイプの三国志NETが誕生し、2006～2009年ころを中心に広がりました。</p>
+        <h2 id="目的">目的</h2>
+        <p>あなたは武将となって、内政・戦争・外交などを駆使して、自分の建国または仕官した国を統一に導きます。</p>
+        <h2 id="特徴">特徴</h2>
+        <p>三国志NETは、現在一般的になっているゲームとは異なる、複数の特徴を持ちます。</p>
+        <h3 id="コマンド先行入力">コマンド先行入力</h3>
+        <p>三国志NETは、コマンドを入力しても、それがすぐに実行されるわけではありません。<br />
+        コマンドリストには、以下のような情報が記載されています。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>番号</th>
+        <th>コマンド</th>
+        <th>時刻</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>農業開発</td>
+        <td>3日18時05分32秒</td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>商業発展</td>
+        <td>3日18時15分32秒</td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>技術開発</td>
+        <td>3日18時25分32秒</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>コマンドリストが上のようになっていた場合、農業開発は18時5分に実行されます。商業発展は15分になるまで待ってやっと実行されます。<br />
+        入力自体は、そのコマンドの更新時刻がまだ来ていない限り、何度でも変更することができます。</p>
+        <p>武将は、コマンドの実行間隔は10分と一緒ですが、それぞれの更新時刻を持ちます。例えばゲーム内で同じ月であっても、ある武将は5分、ある武将は8分と、武将ごとに更新時刻がばらばらです。<br />
+        自分の更新時刻は、コマンドリストから確認することができます。</p>
+        <h3 id="定期的なコマンド入力と放置削除">定期的なコマンド入力と放置削除</h3>
+        <p>コマンドは最大で <code>200</code> まで入力することができます。そして、コマンドを一回実行すると、実行したコマンドはリストから削除されます。<br />
+        つまり、一回コマンドを <code>200</code> まで入力しても、<code>200</code> ターン（ <code>2000</code> 分、1日と9時間20分）待っていると、コマンドリストは空っぽになり何も入力されていない状態になります。<br />
+        この状態で放置すると、放置削除ターンが進みます。放置削除ターンが <code>500</code> たまると、武将データは削除され、ログインできない状態になります。復活するには、また新規登録する必要があります。</p>
+        <p>放置削除の <code>500</code> ターンは、<code>5000</code> 分、3日と11時間20分です。コマンド入力可能な <code>200</code> ターンとあわせると、4日と20時間40分になります。<br />
+        一回ログインしてコマンド入力した後は、4日以内にまた戻ってきて再度コマンド入力する必要があります。</p>
+        <p>ただ、コマンドリストが空の状態ということは、武将が削除されていなくてもどのコマンドも実行されず、それだけの時間を無駄に過ごすということになります。<br />
+        <strong>できればコマンドを切らさない間隔（毎日3～5分程度のプレイ）が推奨されます。</strong></p>
+        <h3 id="リセット">リセット</h3>
+        <p>このゲームには終了条件が存在します。どこかの国が全都市を支配し、統一すると、これ以上ゲームを続けることができなくなります。<br />
+        そのため、統一からしばらく経った後に、ゲームのリセットということをおこないます。</p>
+        <p>リセットされると、すべてのデータは削除され、武将は最初から登録しなおしになります。<br />
+        いわゆる「強くてニューゲーム」すらできませんが、条件はみんな同じです。１つのゲームを、君主、一般、文官、武官など、様々な視点で楽しむことができます。</p>
+        <h3 id="人間同士が１つの空間内で戦うということ">人間同士が１つの空間内で戦うということ</h3>
+        <p>ソーシャルゲームでも、たまに協力プレイ要素、チーム戦、全国ランキングなどを見かけます。<br />
+        三国志NETでは、その側面が非常に強いです。最初から最後まで、チームワークで戦うことになります。</p>
+        <p>武将は、ある国に所属します。この国の人たちで、次の作戦を話し合ったりして、行動に移します。これがチーム戦です。<br />
+        チーム戦がメインですので、お互いの信頼がないと気持ちよく、効率的に行動することができません。<br />
+        ゲーム進行に直接関係のある要素ではありませんが、後述の武将同士の交流も重要になってきます。</p>
+        <h3 id="武将同士の交流">武将同士の交流</h3>
+        <p>人によっては、ゲーム内容よりもこちらがメインになるかもしれません。<br />
+        武将同士で、ゲーム内チャットを使って交流することができます。チャットは、ゲーム内では手紙と呼ばれ、以下の種類があります。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>手紙</th>
+        <th>見られる人</th>
+        <th>主な用途</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>自国</td>
+        <td>自分の国にいる人</td>
+        <td>作戦の共有、経過報告、細かい指示など（※１）</td>
+        </tr>
+        <tr class="even">
+        <td>個人</td>
+        <td>送った人と受信した人</td>
+        <td>１対１で話したいプライベートな話題（※２）</td>
+        </tr>
+        <tr class="odd">
+        <td>全国</td>
+        <td>登録者全員</td>
+        <td>交流</td>
+        </tr>
+        </tbody>
+        </table>
+        <ul>
+        <li>※１：手紙はよく流れやすいので、ゆっくり討論したい、またはしっかり共有したいっていう話題は、会議室・指令というふうに使い分けすることも</li>
+        <li>※２：自国宛がよく流れる場合は、その武将に実行してほしい指示が来ることも</li>
+        </ul>
+        <p>友達がいる場合は、誘ってみましょう。<br />
+        友達がこのゲームに興味を持ってくれれば、交流できる相手も増えます。国や武将数が増えるほど戦略も多様化・複雑化し、展開も予想できなくなっていくため、ゲーム全体も賑やかになってきます。</p>
+        <h3 id="その他注意事項">その他注意事項</h3>
+        <p>リセットされるまで、ゲームは終わりません。戦争に負けて自分の国が滅亡しても、他の国に仕官してその国に協力することができます。</p>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>
