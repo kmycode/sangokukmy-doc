@@ -151,6 +151,52 @@ h4 {
 #article {
   font-size: 16px;
 }
+.arrow-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 17px 0 17px;
+  border-color: #dba9a9 transparent transparent transparent;
+  margin: 16px auto;
+}
+.block {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 8px;
+}
+.block-large {
+  font-size: 2em;
+  text-align: center;
+  width: 60%;
+  min-width: 700px;
+  margin: 0 auto;
+}
+.theme-0 .block {
+  color: #666666;
+  border-color: #666666;
+  background-color: #f1f1f1;
+}
+.theme-1 .block {
+  color: #800000;
+  border-color: #800000;
+  background-color: #ffcfcf;
+}
+.theme-2 .block {
+  color: #000080;
+  border-color: #000080;
+  background-color: #000080;
+}
+.theme-3 .block {
+  color: #006000;
+  border-color: #006000;
+  background-color: #9fe09f;
+}
+.theme-4 .block {
+  color: #404000;
+  border-color: #404000;
+  background-color: #cccca8;
+}
 
 ul {
   list-style: none;
