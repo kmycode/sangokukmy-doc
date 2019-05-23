@@ -168,8 +168,7 @@ h4 {
 .block-large {
   font-size: 2em;
   text-align: center;
-  width: 60%;
-  min-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .theme-0 .block {
@@ -200,8 +199,8 @@ h4 {
 
 ul {
   list-style: none;
-  padding-left: 24px;
-  margin: 24px 0;
+  padding-left: 36px;
+  margin: 36px 0;
 }
 ul li ul {
   margin: 0;
@@ -209,6 +208,7 @@ ul li ul {
 ul li:before {
   content: "•";
   margin-right: 12px;
+  margin-left: -1em;
 }
 .theme-0 li:before {
   color: #666666;

@@ -5,8 +5,6 @@ category: 0
 
 ## 目次
 
-この説明書は、まだ未完成です。当分の間は、[GitHubのほうにある説明書](https://github.com/kmycode/sangokukmy/wiki)を参照してください。  
-ページができ次第、目次の項目やリンクが増えます。  
 [説明書の更新履歴(GitHubのコミット一覧)](https://github.com/kmycode/sangokukmy-doc/commits/master)
 
 ### 基本
@@ -14,9 +12,10 @@ category: 0
 
 #### 初心者向け
 * [三国志NETとは](bas-about.html)
+  * [他の三国志NETとの違い](bas-differences.html)
 * [ゲームの流れ](bas-cycle.html)
 * このゲームでできること
-* 武将の役割分担
+* [武将の役割分担](bas-jobs.html)
 * 新規登録
 * チュートリアル(武官)
 * チュートリアル(文官)
@@ -39,7 +38,7 @@ category: 0
 #### その他
 * オンライン
 * 個人設定
-* 特殊タグ
+* [特殊タグ](bas-tags.html)
 * [リアルタイム更新](bas-realtime.html)
 * 現代の一般的なソーシャルゲームとの主な相違点
 * 一般的な三国志NETとの主な相違点
@@ -65,7 +64,7 @@ category: 0
 
 #### 戦争・戦闘
 * 戦争
-* 攻略
+* [攻略](dip-townwar.html)
 * [兵種](dip-soldiers.html)
   * [徴兵と農民](dip-getsol.html)
 * [城壁と守兵](dip-wallguards.html)
@@ -73,14 +72,20 @@ category: 0
 * 諜報
 * 戦闘
 * 援軍
-* 陣形
 
 #### AI国家
 * [異民族](dip-terrorist.html)
 * 農民反乱
 * 蛮族
-* 経営国家（マネージド国家）
+* [経営国家](dip-managed.html)（マネージド国家）
 
 ### その他
-* 利用規約
-* プライバシーポリシー
+* [利用規約](oth-termsofservice.html)
+* [プライバシーポリシー](oth-privacypolicy.html)
+
+#### ドラフト（実装予定／計画中）
+* [陣形](dip-formation.html)
+* [傀儡国家](dip-puppet.html)
+* 取引
+* 出身
+* 割譲

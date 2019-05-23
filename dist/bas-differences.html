@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>他の三国志NETとの違い - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">他の三国志NETとの違い</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="注意">注意</h2>
+        <p>本稿は、他の三国志NETから来た方向けの説明です。三国志NET自体が初めてという方は、読み飛ばしてください。</p>
+        <h2 id="他の三国志netから来た方へ">他の三国志NETから来た方へ</h2>
+        <p>三国志NET KMY Versionは一般的な三国志NETとは操作が大きく異なりますので、ご留意ください。特に、<strong>更新ボタンが存在しないことは、最も大きな変更点です</strong>。</p>
+        <h3 id="ui">UI</h3>
+        <ul>
+        <li>更新ボタンが存在しません。ページのリロードも必要ありません。ほぼすべての情報は、自動かつリアルタイムに更新されます
+        <ul>
+        <li>リアルタイム更新によって、サーバに過度の負担がかかることはありませんが、ブラウザは長時間の利用で情報が蓄積され重くなることがあります。[[リアルタイム更新について]]も参照してください</li>
+        </ul></li>
+        <li>UIが大幅に見直されており、パソコンやタブレットでは、すべての情報がスクロールなしで閲覧できるようになっております</li>
+        <li>Infinite Scroll（無限スクロール）を取り入れています。過去の手紙を読みたいときは手紙を一番下までスクロールする、といった具合です。マップログ、武将行動ログにも採用しています</li>
+        <li>データベースを使用しており、サーバに負荷をかける見込みもないことから、手紙ログは古いものを削除せずすべて保存しています。手紙が大量にあると大変ですが頑張って遡れば、最初の手紙を見ることも可能です</li>
+        <li>フォントは、一般的な三国志NETでは<code>MS P Gothic</code>ですが、KMYでは<code>Yu Gothic</code>を採用しています
+        <ul>
+        <li>Windows 8.1では文字が細く見えるかもしれません</li>
+        </ul></li>
+        <li>ページ遷移は存在しません（見かけ上のページ遷移はありますが、HTTPサーバに問い合わせた上でのページ遷移は存在しません）
+        <ul>
+        <li>徴兵などのコマンド入力時、同盟や戦争などの操作には、ダイアログを利用します</li>
+        <li>コマンド入力時の遷移がないため、入力後も視線の移動が少ないです。ストレスなく操作できると思います</li>
+        </ul></li>
+        <li>Internet Explorer、Microsoft Edgeでの閲覧は<strong>想定していません</strong>。Google Chrome、Mozillia Firefoxなどのご利用を強くおすすめします
+        <ul>
+        <li>これらのブラウザでは一部の機能が利用できない、誤動作を起こすなどの報告をいくつかいただいておりますが、対応する予定は現時点でありません</li>
+        <li>普段からこれらのブラウザを利用されている方には心苦しく思いますが、専門的な理由により、ウェブデザイナやエンジニアからは嫌われているブラウザでもあります。仕事なら対応していましたが、趣味だと開発や運営に割ける時間的リソースも少なく、ブラウザのシェアも考慮すると修正時間に対する効果も見込めません。複数の情報を総合いたしまして、これらのブラウザへの対応は切り捨てるべきと判断いたしました。何卒ご了承ください</li>
+        </ul></li>
+        </ul>
+        <h3 id="ゲームシステム">ゲームシステム</h3>
+        <ul>
+        <li>攻略という、いわゆる奇襲を制限付きで容認したシステムがあります。首都を除く重要な都市には、城壁のケアをしたり、守備についておいたりする必要があります</li>
+        <li>兵種は普通、攻撃力に武力を加えます。例えば雑兵は補正0ですが、攻撃力には補正のほかに武力を加算すると決まっているため、武力がそのまま攻撃力になります。そうでない兵種が、おもに文官向けのものにおいて存在します</li>
+        <li>政策が存在します
+        <ul>
+        <li>政務庁より、仁官、副部隊長、農業・商業専門の文官を雇うことができます。また、政務官を移動させたり、部隊に所属させたりできます。だからといって人間の文官・仁官が完全に必要なくなったわけではなく、いることでまた別の政策が採用できるなど、長期的な戦略に影響を及ぼします</li>
+        <li>政策に応じて、城壁の兵種が変化します</li>
+        </ul></li>
+        <li>リセット時に地図を自動生成します。毎期地形が変化する上に、都市特化の配置も変化します。毎期、異なる戦略を立てる必要に迫られます
+        <ul>
+        <li>どのような地形になるかはリセットされるまでわかりません。地形生成プログラムにもやはり限界があり、パターンはいくつかに限られます。一方で、具体的にこの都市に建国してどこと同盟などといった定型的な戦略ではなく、臨機応変的に戦略を立てる必要もあります</li>
+        </ul></li>
+        <li>AI国家が存在します。思考ルーチンは人間に劣るものの、自分で戦争の作戦を立て、人間の国（まれにAI国家同士）に侵攻します</li>
+        </ul>
+        <h3 id="データ">データ</h3>
+        <ul>
+        <li><code>10</code> 分更新</li>
+        <li>コマンド先行入力 <code>200</code> ターン</li>
+        <li>放置削除 <code>500</code> ターン</li>
+        <li>建国後戦闘解除 <code>288</code> ターン</li>
+        <li>戦闘禁止中仕官制限 <code>4</code>人</li>
+        <li>リセットは統一の <code>24</code> 時間後の最初の夜9時</li>
+        <li>更新開始はリセットの <code>48</code> 時間後</li>
+        </ul>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>
