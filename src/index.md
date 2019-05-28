@@ -75,7 +75,7 @@ category: 0
 
 #### AI国家
 * [異民族](dip-terrorist.html)
-* 農民反乱
+* [農民反乱](dip-farmer.html)
 * 蛮族
 * [経営国家](dip-managed.html)（マネージド国家）
 
