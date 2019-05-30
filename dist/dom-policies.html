@@ -58,19 +58,19 @@
         <td>農業国家</td>
         <td>3000</td>
         <td>郡県制</td>
-        <td>農業都市につき政策ポイント <code>+3</code><br>首都の下敷きが農業都市の場合追加 <code>+3</code></td>
+        <td>農業都市につき政策ポイント <code>+3</code><br>首都の下敷きが農業都市の場合 <code>+3</code></td>
         </tr>
         <tr class="odd">
         <td>商業国家</td>
         <td>3000</td>
         <td>郡県制</td>
-        <td>商業都市につき政策ポイント <code>+3</code><br>首都の下敷きが商業都市の場合追加 <code>+3</code></td>
+        <td>商業都市につき政策ポイント <code>+3</code><br>首都の下敷きが商業都市の場合 <code>+3</code></td>
         </tr>
         <tr class="even">
         <td>城塞国家</td>
         <td>3000</td>
         <td>郡県制</td>
-        <td>城塞都市につき政策ポイント <code>+3</code><br>首都の下敷きが城塞都市の場合追加 <code>+3</code></td>
+        <td>城塞都市につき政策ポイント <code>+3</code><br>首都の下敷きが城塞都市の場合 <code>+3</code></td>
         </tr>
         </tbody>
         </table>
@@ -98,24 +98,30 @@
         <td>国庫納入する収入余剰最大 <code>+2k</code></td>
         </tr>
         <tr class="odd">
-        <td>壁に耳</td>
-        <td>4000</td>
-        <td>徴収、地下貯蔵</td>
-        <td>国庫納入する収入余剰最大 <code>+2k</code></td>
-        </tr>
-        <tr class="even">
         <td>増給</td>
         <td>2000</td>
-        <td>経済評論、人材開発</td>
+        <td>徴収</td>
         <td>武将収入の階級加算 <code>+50</code></td>
         </tr>
+        <tr class="even">
+        <td>壁に耳</td>
+        <td>4000</td>
+        <td>増給、地下貯蔵</td>
+        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
+        </tr>
         <tr class="odd">
-        <td>災害対策</td>
-        <td>3000</td>
-        <td></td>
-        <td>洪水、地震の被害軽減</td>
+        <td>障子に目</td>
+        <td>4000</td>
+        <td>壁に耳、胃の中</td>
+        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
         </tr>
         <tr class="even">
+        <td>災害対策</td>
+        <td>3000</td>
+        <td>経済評論</td>
+        <td>洪水、地震の被害軽減</td>
+        </tr>
+        <tr class="odd">
         <td>復興支援</td>
         <td>2000</td>
         <td>災害対策</td>
@@ -186,22 +192,40 @@
         <tr class="odd">
         <td>文官国家</td>
         <td>2000</td>
-        <td>人材開発</td>
+        <td>武官国家</td>
         <td>文官数につき毎ターン政策ポイント <code>+4</code></td>
         </tr>
         <tr class="even">
-        <td>人情国家</td>
-        <td>2000</td>
+        <td>号令</td>
+        <td>3000</td>
         <td>文官国家</td>
-        <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
+        <td>政務官部隊長が雇用可能</td>
         </tr>
         <tr class="odd">
         <td>施設連携</td>
         <td>3000</td>
-        <td>武官国家、文官国家</td>
+        <td>号令</td>
         <td>強化系都市施設効果 <code>+7</code></td>
         </tr>
         <tr class="even">
+        <td>人情国家</td>
+        <td>2000</td>
+        <td>施設連携</td>
+        <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
+        </tr>
+        <tr class="odd">
+        <td>採用策</td>
+        <td>3000</td>
+        <td>人情国家</td>
+        <td>政務官 <code>+1</code></td>
+        </tr>
+        <tr class="even">
+        <td>武官の肇</td>
+        <td>2000</td>
+        <td>武官国家</td>
+        <td>取得から <code>144</code> ターン武力と知力の高い方を内政に使用<br>文官国家をブースト</td>
+        </tr>
+        <tr class="odd">
         <td>密偵</td>
         <td>4000</td>
         <td></td>
@@ -305,6 +329,7 @@
         </tr>
         </tbody>
         </table>
+        <p>取得から一定ターンの間のみ有効な政策は、取得の翌月より起算します。</p>
       </div>
 
       <div id="article-footer">
