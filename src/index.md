@@ -86,6 +86,7 @@ category: 0
 #### ドラフト（実装予定／計画中）
 * [陣形](dip-formation.html)
 * [傀儡国家](dip-puppet.html)
+* [アイテム](bas-item.html)
 * 取引
 * 出身
 * 割譲
