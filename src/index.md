@@ -88,5 +88,5 @@ category: 0
 * [傀儡国家](dip-puppet.html)
 * [アイテム](bas-item.html)
 * 取引
-* 出身
+* [出身](bas-from.html)
 * 割譲
