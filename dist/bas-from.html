@@ -42,16 +42,53 @@
         <li>能力の上がりやすさ</li>
         <li>実行できるコマンド</li>
         </ul>
-        <p>この文書はドラフト段階であり、本来なら<a href="bas-commands.html">コマンド一覧</a>や<a href="dip-soldiers.html">兵種一覧</a>に記述すべき内容もここに記述します。</p>
+        <p>出身によって、異なる技能を獲得することができます。技能の獲得には、技能ポイントが必要です。技能ポイントは、以下で回復可能です。</p>
+        <ul>
+        <li>階級昇格</li>
+        <li>都市巡回で低い確率で得る</li>
+        </ul>
         <h2 id="出身">出身</h2>
         <h3 id="武家">武家</h3>
         <p>戦闘を得意とします。</p>
-        <ul>
-        <li>突撃確率上昇</li>
-        <li>都市巡回実行可能</li>
-        </ul>
         <h4 id="初期能力への加算">初期能力への加算</h4>
         <p>武力 <code>20</code></p>
+        <h4 id="技能">技能</h4>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>武家Lv.1</td>
+        <td>0</td>
+        <td>毎月武力Ex <code>+7</code></td>
+        </tr>
+        <tr class="even">
+        <td>武家Lv.2</td>
+        <td>10</td>
+        <td>コマンド 都市巡回</td>
+        </tr>
+        <tr class="odd">
+        <td>武家Lv.3</td>
+        <td>10</td>
+        <td>徴兵に必要な金 <code>-10%</code></td>
+        </tr>
+        <tr class="even">
+        <td>武家Lv.4</td>
+        <td>10</td>
+        <td>攻撃力 <code>+20</code></td>
+        </tr>
+        <tr class="odd">
+        <td>武家Lv.5</td>
+        <td>10</td>
+        <td>突撃確率 <code>+1%</code>、突撃威力 <code>+50</code></td>
+        </tr>
+        </tbody>
+        </table>
         <h3 id="文官">文官</h3>
         <p>内政を得意とします。</p>
         <ul>
@@ -60,13 +97,92 @@
         </ul>
         <h4 id="初期能力への加算-1">初期能力への加算</h4>
         <p>知力 <code>20</code></p>
+        <h4 id="技能-1">技能</h4>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>文官Lv.1</td>
+        <td>0</td>
+        <td>毎月知力Ex <code>+7</code></td>
+        </tr>
+        <tr class="even">
+        <td>文官Lv.2</td>
+        <td>10</td>
+        <td>内政効果 <code>+40%</code></td>
+        </tr>
+        <tr class="odd">
+        <td>文官Lv.3</td>
+        <td>10</td>
+        <td>政策開発時、未取得政策ブースト確率 <code>+0.4%</code></td>
+        </tr>
+        <tr class="even">
+        <td>文官Lv.4</td>
+        <td>10</td>
+        <td>護衛属性含む兵種使用時、防御力 <code>+20</code></td>
+        </tr>
+        <tr class="odd">
+        <td>文官Lv.5</td>
+        <td>10</td>
+        <td>内政効果 <code>+40%</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="商人">商人</h3>
+        <p>金策を得意とします。</p>
+        <h4 id="初期能力への加算-2">初期能力への加算</h4>
+        <p>知力 <code>20</code></p>
+        <h4 id="技能-2">技能</h4>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>商人Lv.1</td>
+        <td>0</td>
+        <td>アイテム上限 <code>+2</code></td>
+        </tr>
+        <tr class="even">
+        <td>商人Lv.2</td>
+        <td>10</td>
+        <td>米売買上限 <code>+5000</code></td>
+        </tr>
+        <tr class="odd">
+        <td>商人Lv.3</td>
+        <td>10</td>
+        <td>アイテム購入価格 <code>-10%</code></td>
+        </tr>
+        <tr class="even">
+        <td>商人Lv.4</td>
+        <td>10</td>
+        <td>コマンド 都市投資</td>
+        </tr>
+        <tr class="odd">
+        <td>商人Lv.5</td>
+        <td>10</td>
+        <td>アイテム上限 <code>+2</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="検討中の出身">検討中の出身</h2>
         <h3 id="司令官">司令官</h3>
         <p>兵士の統率を得意とします。</p>
         <ul>
         <li>使用できる陣形多め</li>
         <li>通常は戦闘時にしか上がらない陣形経験値を平時も上げることができる</li>
         </ul>
-        <h4 id="初期能力への加算-2">初期能力への加算</h4>
+        <h4 id="初期能力への加算-3">初期能力への加算</h4>
         <p>統率 <code>20</code></p>
         <h3 id="指揮者">指揮者</h3>
         <p>人に教えることを得意とします。</p>
@@ -74,18 +190,8 @@
         <li>共同鍛錬、共同訓練で他武将と一緒にコマンドを実行可（他武将は関係ないコマンドを実行してもよい）</li>
         <li>他武将の陣形取得にブーストをかけられる</li>
         </ul>
-        <h4 id="初期能力への加算-3">初期能力への加算</h4>
-        <p>武力 <code>10</code>, いくらかの陣形</p>
-        <h3 id="商人">商人</h3>
-        <p>金策を得意とします。</p>
-        <ul>
-        <li>アイテムを安く入手できる</li>
-        <li>アイテムを市場で売却するのみならず、自ら商人になって売ることができる</li>
-        <li>米売買を一度に大量に行なえ、かつ値引きもできる</li>
-        <li>無所属の時、好きな国に送金できる</li>
-        </ul>
         <h4 id="初期能力への加算-4">初期能力への加算</h4>
-        <p>知力 <code>20</code></p>
+        <p>武力 <code>10</code>, いくらかの陣形</p>
         <h3 id="異民族">異民族</h3>
         <p>異民族との交流を積極的に行います。（イベントとしての異民族ではなく、平時から常に存在している異民族との交流をさします）</p>
         <ul>
