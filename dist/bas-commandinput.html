@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>コマンド入力方法 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">コマンド入力方法</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="概要">概要</h2>
+        <p>このページでは、コマンドの入力方法について紹介します。</p>
+        <h2 id="基本的な入力の流れ">基本的な入力の流れ</h2>
+        <div class="block block-large">コマンド番号選択</div>
+        <div class="arrow-bottom"></div>
+        <div class="block block-large">コマンド選択</div>
+        <h3 id="コマンド番号選択">コマンド番号選択</h3>
+        <p>コマンド番号は、コマンドリストの任意の行をクリックすることで選択することができます。</p>
+        <h4 id="原作との違い">原作との違い</h4>
+        <p>コマンド番号を複数選択するとき、原作では <code>Ctrl</code> キーの押下が必要でしたが、KMYでは必要ありません。</p>
+        <p>また、連続したコマンド番号を一斉選択するとき、原作では <code>Shift</code> キーの押下が必要でしたが、KMYでは以下の２つの方法が用意されています。</p>
+        <ul>
+        <li><code>Shift</code> キーを使用する</li>
+        <li>「複数選択」ボタンを使用する
+        <ul>
+        <li>最初の番号を選択</li>
+        <li>「複数選択」ボタンを押して黒くする</li>
+        <li>最後の番号を選択（ここで複数選択される）</li>
+        <li>「複数選択」ボタンをもう一度押して白くする</li>
+        </ul></li>
+        </ul>
+        <h4 id="コマンド選択ツール">コマンド選択ツール</h4>
+        <p>現状、以下のツールが用意されています。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>消去</td>
+        <td>すべての選択を解除します</td>
+        </tr>
+        <tr class="even">
+        <td>全て</td>
+        <td>すべての行を選択します</td>
+        </tr>
+        <tr class="odd">
+        <td>偶数</td>
+        <td>偶数番号を選択します</td>
+        </tr>
+        <tr class="even">
+        <td>奇数</td>
+        <td>奇数番号を選択します</td>
+        </tr>
+        <tr class="odd">
+        <td>ax+b</td>
+        <td>aの倍数にbを足した番号を選択します</td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="コマンド選択と時間経過">コマンド選択と時間経過</h4>
+        <p>時間が経過して、コマンド選択中にコマンドが実行された場合、選択は1つずつ上へずれます。<br />
+        例えばコマンド選択ツールで偶数を選択した場合、そのあとにコマンドが実行されると奇数を選択ていることになりますので注意してください。</p>
+        <p>一番上のコマンドのみを選択していると、コマンドの選択が解除されたのと同じになります。特に登用コマンドなど、コマンド選択から入力完了まで時間のかかるものは注意してください。</p>
+        <p>なお、コマンドを入力するとき、内部ではコマンド番号ではなくコマンドが実行される年月で識別します。そのため、コマンド入力の瞬間にコマンドが実行されたとしても、入力がずれることはありません。</p>
+        <h4 id="範囲選択">範囲選択</h4>
+        <p>任意のコマンド番号を選択してから「範囲」ボタンをクリックすると、選択したコマンド番号しか選択できない状態になります。<br />
+        この状態で、偶数・奇数など選択ツールと併用することで、特定の範囲内で複雑な入力を行うことが可能です。<br />
+        また、後述の挿入・削除とも併用することができます。</p>
+        <p>なお、範囲は飛び地にすることもできます。</p>
+        <h3 id="コマンド選択">コマンド選択</h3>
+        <p>実行するコマンドの選択については、<a href="bas-commands.html">コマンド一覧</a>などを参考にしてください。</p>
+        <h2 id="挿入削除">挿入・削除</h2>
+        <p>すでに入力したコマンドを、任意の数だけ上にずらしたり、下にずらしたりすることができます。</p>
+        <h3 id="挿入">挿入</h3>
+        <p>選択した行の上に、空行を挿入します。2行以上続けて選択した場合は、空行が2行挿入されます。</p>
+        <p>飛び地となる行を選択することもできます。その場合でも、空行はあくまで選択された行の上に挿入されます。</p>
+        <p>最後の行（範囲選択仲の場合は範囲の最後の行）にあるコマンドは削除されます。</p>
+        <h3 id="削除">削除</h3>
+        <p>選択した行を削除し、後続のコマンドを上に繰り上げます。複数の連続した行や、飛び地となる行を選択することもできます。</p>
+        <p>最後の行（範囲選択中の場合は範囲の最後の行）に、空行が挿入されます。</p>
+        <h3 id="繰返">繰返</h3>
+        <p>ループ入力。選択した行より後の行を、選択した行で繰り返し入力します。飛び地となる行を選択した場合、飛び地ごとにループ入力されるコマンドが変わります。</p>
+        <p>最後の行（範囲選択中の場合は範囲の最後の行）まですべての行に入力されます。</p>
+        <h3 id="使用時の注意点">使用時の注意点</h3>
+        <p>挿入・削除・繰り返しは、すでに入力したコマンドを書き換えます。<br />
+        そのため、内部では「すべてのコマンドを最初から入力しなおす」という動きになり、以下の制約がつきます。特に米売買などについては、特に警告も表示されずすぐ変更されますので、注意が必要です。<br />
+        なお、以下の注意事項は、対象となるコマンドが書き換えられる場合に有効です。例えば、徴兵コマンドが２番に入力されているときに３番の上に挿入する場合、２番の徴兵コマンドは以下の制約による影響を受けません。</p>
+        <ul>
+        <li>コマンド入力に特定の条件が必要なもの（例；都市技術が必要な高級兵種を徴兵するコマンド）が、挿入・削除・繰り返し実行時点で条件を満たしていない場合、挿入・削除・繰り返しの操作全体が失敗します。部分的に書き換えられることはありません</li>
+        <li>米売買など、コマンド入力時点の状態によって結果が変わるコマンドは、挿入・削除・繰り返しの時点で、新しい状態に基づく結果に書き換えられます</li>
+        </ul>
+        <p>これらの制約を避けるためには、範囲選択を活用するといった工夫が必要になります。</p>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

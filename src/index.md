@@ -28,7 +28,7 @@ category: 0
 * 役職
 * [コマンド](bas-command.html)
   * [コマンド一覧](bas-commands.html)
-  * コマンド入力方法
+  * [コマンド入力方法](bas-commandinput.html)
   * 入力時判定と実行時判定
 * 手紙
 * 会議室
@@ -40,8 +40,6 @@ category: 0
 * 個人設定
 * [特殊タグ](bas-tags.html)
 * [リアルタイム更新](bas-realtime.html)
-* 現代の一般的なソーシャルゲームとの主な相違点
-* 一般的な三国志NETとの主な相違点
 
 ### 内政
 * 建国
@@ -83,10 +81,15 @@ category: 0
 * [利用規約](oth-termsofservice.html)
 * [プライバシーポリシー](oth-privacypolicy.html)
 
-#### ドラフト（実装予定／計画中）
+#### 第0.7期実装予定
+* [実装概要](oth-plan.html)
 * [陣形](dip-formation.html)
-* [傀儡国家](dip-puppet.html)
+  * [陣形一覧](dip-formations.html)
 * [アイテム](bas-item.html)
+  * [アイテム一覧](bas-items.html)
+
+#### ドラフト（実装予定／計画中）
+* [傀儡国家](dip-puppet.html)
 * 取引
 * [出身](bas-from.html)
 * 割譲
