@@ -30,6 +30,9 @@ category: 0
   * [コマンド一覧](bas-commands.html)
   * [コマンド入力方法](bas-commandinput.html)
   * 入力時判定と実行時判定
+* [アイテム](bas-item.html)
+  * [アイテム一覧](bas-items.html)
+* [出身](bas-from.html)
 * 手紙
 * 会議室
 * 統一とリセット
@@ -66,6 +69,8 @@ category: 0
 * [兵種](dip-soldiers.html)
   * [徴兵と農民](dip-getsol.html)
 * [城壁と守兵](dip-wallguards.html)
+* [陣形](dip-formation.html)
+  * [陣形一覧](dip-formations.html)
 * 部隊
 * 諜報
 * 戦闘
@@ -80,16 +85,9 @@ category: 0
 ### その他
 * [利用規約](oth-termsofservice.html)
 * [プライバシーポリシー](oth-privacypolicy.html)
-
-#### 第0.7期実装予定
-* [実装概要](oth-plan.html)
-* [陣形](dip-formation.html)
-  * [陣形一覧](dip-formations.html)
-* [アイテム](bas-item.html)
-  * [アイテム一覧](bas-items.html)
+* [第0.7期実装概要](oth-plan.html)
 
 #### ドラフト（実装予定／計画中）
 * [傀儡国家](dip-puppet.html)
 * 取引
-* [出身](bas-from.html)
 * 割譲

@@ -129,7 +129,7 @@
         </tr>
         </tbody>
         </table>
-        <h2 id="内政系商業都市">内政系（商業都市）</h2>
+        <h3 id="aツリー農業都市">Aツリー（農業都市）</h3>
         <table>
         <thead>
         <tr class="header">
@@ -141,32 +141,74 @@
         </thead>
         <tbody>
         <tr class="odd">
-        <td><strong>貯蔵</strong></td>
+        <td><strong>経済論</strong></td>
         <td>4000</td>
         <td></td>
+        <td>蝗害、疫病被害軽減、金・米収入増大</td>
+        </tr>
+        <tr class="even">
+        <td>貯蔵</td>
+        <td>4000</td>
+        <td>経済論</td>
+        <td>国庫最大 <code>+1M</code></td>
+        </tr>
+        <tr class="odd">
+        <td>徴収</td>
+        <td>3000</td>
+        <td>貯蔵</td>
+        <td>国庫納入する収入余剰最大 <code>+2k</code></td>
+        </tr>
+        <tr class="even">
+        <td>増給</td>
+        <td>2000</td>
+        <td>徴収</td>
+        <td>武将収入の階級加算 <code>+50</code></td>
+        </tr>
+        <tr class="odd">
+        <td>地下貯蔵</td>
+        <td>2000</td>
+        <td>増給</td>
         <td>国庫最大 <code>+1M</code></td>
         </tr>
         <tr class="even">
+        <td>壁に耳</td>
+        <td>4000</td>
         <td>地下貯蔵</td>
-        <td>2000</td>
-        <td>貯蔵</td>
-        <td>国庫最大 <code>+1M</code></td>
+        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
         </tr>
         <tr class="odd">
         <td>胃の中</td>
         <td>2000</td>
-        <td>地下貯蔵</td>
+        <td>壁に耳</td>
         <td>国庫最大 <code>+1M</code></td>
         </tr>
         <tr class="even">
+        <td>障子に目</td>
+        <td>4000</td>
+        <td>胃の中</td>
+        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
+        </tr>
+        <tr class="odd">
         <td>血管の中</td>
         <td>3000</td>
-        <td>胃の中</td>
+        <td>障子に目</td>
         <td>国庫最大 <code>+1M</code></td>
+        </tr>
+        <tr class="even">
+        <td>災害対策</td>
+        <td>3000</td>
+        <td>経済評論</td>
+        <td>洪水、地震の被害軽減</td>
+        </tr>
+        <tr class="odd">
+        <td>復興支援</td>
+        <td>2000</td>
+        <td>災害対策</td>
+        <td>洪水、地震発生時、民忠 <code>+10</code>、都市につき政策ポイント <code>+30</code></td>
         </tr>
         </tbody>
         </table>
-        <h2 id="人材系">人材系</h2>
+        <h3 id="bツリー商業都市">Bツリー（商業都市）</h3>
         <table>
         <thead>
         <tr class="header">
@@ -202,16 +244,16 @@
         <td>政務官部隊長が雇用可能</td>
         </tr>
         <tr class="odd">
-        <td>施設連携</td>
-        <td>3000</td>
-        <td>号令</td>
-        <td>強化系都市施設効果 <code>+7</code></td>
-        </tr>
-        <tr class="even">
         <td>人情国家</td>
         <td>2000</td>
-        <td>施設連携</td>
+        <td>号令</td>
         <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
+        </tr>
+        <tr class="even">
+        <td>施設連携</td>
+        <td>3000</td>
+        <td>施設連携</td>
+        <td>強化系都市施設効果 <code>+7</code></td>
         </tr>
         <tr class="odd">
         <td>採用策</td>
@@ -233,7 +275,7 @@
         </tr>
         </tbody>
         </table>
-        <h2 id="軍事系城塞都市">軍事系（城塞都市）</h2>
+        <h3 id="cツリー城塞都市">Cツリー（城塞都市）</h3>
         <table>
         <thead>
         <tr class="header">
@@ -251,52 +293,55 @@
         <td>賊の被害軽減</td>
         </tr>
         <tr class="even">
-        <td>攻防の礎</td>
-        <td>2000</td>
-        <td>賊の監視</td>
-        <td>守兵のランク B</td>
-        </tr>
-        <tr class="odd">
         <td>賊の殲滅</td>
         <td>2000</td>
         <td>賊の監視</td>
         <td>賊発生時、都市につき政策ポイント <code>+30</code></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>正義とは</td>
         <td>2000</td>
         <td>賊の殲滅</td>
         <td>義賊の効果増大</td>
         </tr>
-        <tr class="odd">
-        <td>檄</td>
-        <td>3000</td>
-        <td>正義とは、武官国家</td>
-        <td>義勇兵が徴兵可能</td>
-        </tr>
-        <tr class="even">
-        <td>土塁</td>
-        <td>2000</td>
-        <td>攻防の礎、人材開発</td>
-        <td>守兵のランク C</td>
-        </tr>
-        <tr class="odd">
-        <td>石城</td>
-        <td>3000</td>
-        <td>土塁、武官国家</td>
-        <td>守兵のランク D</td>
-        </tr>
         <tr class="even">
         <td>攻城</td>
         <td>4000</td>
-        <td>攻防の礎、武官国家</td>
+        <td>正義とは</td>
         <td>井闌1小隊あたり徴兵コスト <code>-50</code></td>
         </tr>
         <tr class="odd">
+        <td>檄</td>
+        <td>3000</td>
+        <td>攻城</td>
+        <td>義勇兵が徴兵可能</td>
+        </tr>
+        <tr class="even">
         <td>衝車常備</td>
         <td>4000</td>
-        <td>攻城</td>
+        <td>檄</td>
         <td>戦闘時、常に城壁攻撃力 <code>+60</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="その他">その他</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>基本政策P</th>
+        <th>必要政策</th>
+        <th>追加効果</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>胡人徴発</td>
+        <td>0</td>
+        <td></td>
+        <td>重騎兵徴兵コスト <code>/2</code></td>
+        <td>異民族倒したときに取得</td>
         </tr>
         </tbody>
         </table>
