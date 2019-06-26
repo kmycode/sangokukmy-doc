@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>画面の見方 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">画面の見方</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="概要">概要</h2>
+        <p>三国志NET KMY Versionは、他の三国志NETとは異なり、ゼロから組み直され、UIもゼロから作られたものです。三国志NETが誕生した時代には存在しなかったスマートフォンや、UX<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>における一般的な考え方、レスポンシブデザイン<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>という考え方などによってUIが設計されています。そのため、UIが他の三国志NETと異なり、全く別のゲームに見えるかもしれません。<br />
+        ゲームシステム自体は旧来の三国志NETを踏襲したものなので、UIに慣れると後が簡単だと思います。</p>
+        <p>画面はリアルタイムで更新されます。もう少し詳しく知りたい方は、少々専門的な説明になりますが、<a href="bas-realtime.html">リアルタイム更新</a>も参照してください。</p>
+        <h2 id="ステータス画面全体">ステータス画面全体</h2>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>番号</th>
+        <th>名前</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>地図切り替えタブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>地図</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>情報タブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>メニュータブ</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="地図切り替えタブ">地図切り替えタブ</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>番号</th>
+        <th>名前</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>地図タブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>ONタブ</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>武将情報タブ</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="onタブ">ONタブ</h4>
+        <p>武将のON状況を表示します。<a href="bas-online.html">オンライン</a>も参照してください。</p>
+        <h4 id="武将情報タブ">武将情報タブ</h4>
+        <p>武将情報、および武将行動ログ（武将ログ）を表示します。</p>
+        <h3 id="地図">地図</h3>
+        <p>現在所在中の都市がハイライトされます。</p>
+        <p>都市をクリックすることで、その都市に赤い枠が付き、選択状態になります。<br />
+        選択状態になった都市は、以下のように利用します。</p>
+        <ul>
+        <li>選択中の都市の情報が、情報タブに表示される</li>
+        <li>移動・戦争コマンド入力時に、対象の都市として設定される</li>
+        </ul>
+        <h3 id="情報タブ">情報タブ</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>番号</th>
+        <th>名前</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>都市情報タブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>国情報タブ</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>データタブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>情勢タブ</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="都市情報タブ">都市情報タブ</h4>
+        <p>都市の情報、滞在武将を表示します。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>ボタン名</th>
+        <th>出現条件</th>
+        <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>武将</td>
+        <td>自国または滞在中</td>
+        <td>その都市にいる武将一覧を表示します</td>
+        </tr>
+        <tr class="even">
+        <td>守備</td>
+        <td>自国または滞在中</td>
+        <td>その都市を守備している武将一覧を表示します</td>
+        </tr>
+        <tr class="odd">
+        <td>武将（当時）</td>
+        <td>諜報された他国都市</td>
+        <td>その都市に諜報時点で滞在している武将一覧を表示します</td>
+        </tr>
+        <tr class="even">
+        <td>守備（当時）</td>
+        <td>重宝された他国都市</td>
+        <td>その都市に諜報時点で守備している武将一覧を表示します</td>
+        </tr>
+        <tr class="odd">
+        <td>諜報</td>
+        <td>滞在中の他国都市</td>
+        <td>その都市を諜報し、情報を自国で共有します</td>
+        </tr>
+        <tr class="even">
+        <td><a href="dip-townwar.html">攻略</a></td>
+        <td>他国都市</td>
+        <td>その都市の攻略情報を確認、または攻略を実行します</td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="国情報タブ">国情報タブ</h4>
+        <p>国の情報、官職を表示します。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>ボタン名</th>
+        <th>出現条件</th>
+        <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>武将</td>
+        <td>全国</td>
+        <td>その国に所属する武将一覧を表示します。任命もここでします</td>
+        </tr>
+        <tr class="even">
+        <td>部隊</td>
+        <td>自国</td>
+        <td>その国の部隊一覧を表示します</td>
+        </tr>
+        <tr class="odd">
+        <td>政策</td>
+        <td>自国</td>
+        <td>その国の政策一覧を表示します</td>
+        </tr>
+        <tr class="even">
+        <td>同盟</td>
+        <td>他国</td>
+        <td>その国と自分の国の同盟関係を確認、または申請・締結します</td>
+        </tr>
+        <tr class="odd">
+        <td>戦争</td>
+        <td>他国</td>
+        <td>その国と自分の国の戦争関係を確認、または布告します</td>
+        </tr>
+        <tr class="even">
+        <td>国宛</td>
+        <td>他国かつ君主軍師</td>
+        <td>その国に国宛手紙を送ります</td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="データタブ">データタブ</h4>
+        <p>国の都市の数値一覧、武将の配置などを一括で表示します。</p>
+        <h4 id="情勢タブ">情勢タブ</h4>
+        <p>最新のマップログを表示します。</p>
+        <h3 id="メニュータブ">メニュータブ</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>番号</th>
+        <th>名前</th>
+        <th>備考</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>コマンドタブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>手紙タブ</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>会議室タブ</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>メニューボタン</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="コマンドタブ">コマンドタブ</h4>
+        <p>コマンドを表示・入力します。<a href="bas-command.html">コマンド</a>も参照してください。</p>
+        <h4 id="手紙タブ">手紙タブ</h4>
+        <p>手紙を表示・投稿します。</p>
+        <h4 id="会議室タブ">会議室タブ</h4>
+        <p>会議室を表示・投稿します。</p>
+        <h2 id="原作との対照表">原作との対照表</h2>
+        <table>
+        <colgroup>
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        <col style="width: 33%" />
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>やりたいこと</th>
+        <th>原作</th>
+        <th>KMY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>コマンド入力番号選択</td>
+        <td>コマンドリストとは別にある選択蘭から</td>
+        <td>コマンドタブのコマンドリストから直接</td>
+        </tr>
+        <tr class="even">
+        <td>番号選択後のコマンド入力</td>
+        <td>１．リストからコマンド選択<br>２．「実行」ボタン</td>
+        <td>１．リスト上の任意のタブを選択<br>コマンドボタンクリック</td>
+        </tr>
+        <tr class="odd">
+        <td>移動・戦争コマンド入力</td>
+        <td>１．コマンド選択して「実行」ボタン<br>２．次の画面からリスト選択</td>
+        <td>１．対象都市を地図から直接選択<br>コマンドボタンをクリック</td>
+        </tr>
+        <tr class="even">
+        <td>都市情報確認</td>
+        <td>画面左側</td>
+        <td>都市情報タブ</td>
+        </tr>
+        <tr class="odd">
+        <td>武将情報確認</td>
+        <td>画面左側</td>
+        <td>武将情報タブ</td>
+        </tr>
+        <tr class="even">
+        <td>自分の役職を確認</td>
+        <td>武将情報の一番上</td>
+        <td>自国情報タブから探す</td>
+        </tr>
+        <tr class="odd">
+        <td>武将行動ログ確認</td>
+        <td>都市情報</td>
+        <td>武将情報タブ</td>
+        </tr>
+        <tr class="even">
+        <td>マップログ確認</td>
+        <td>画面左側</td>
+        <td>情勢タブ</td>
+        </tr>
+        <tr class="odd">
+        <td>同じ都市にいる武将一覧</td>
+        <td>都市情報</td>
+        <td>都市情報タブ「武将」ボタン</td>
+        </tr>
+        <tr class="even">
+        <td>自国の他都市情報確認</td>
+        <td>国データ</td>
+        <td>１．地図の都市をクリック<br>２．都市情報タブ</td>
+        </tr>
+        <tr class="odd">
+        <td>自国の都市情報を一覧</td>
+        <td>国データ</td>
+        <td>１．データタブ<br>２．「一覧」ボタン</td>
+        </tr>
+        <tr class="even">
+        <td>自国の役職一覧を確認</td>
+        <td>国データ</td>
+        <td>自国の国情報タブ</td>
+        </tr>
+        <tr class="odd">
+        <td>個宛</td>
+        <td>１．画面左下のリストから「個人当て手紙」を選択<br>２．「実行」ボタン<br>３．送信先武将選択<br>４．手紙を書く<br>５．送信</td>
+        <td>１．任意の都市または国情報の「武将」ボタン<br>２．武将一覧の右上にある「個宛」ボタン<br>３．手紙を書く<br>４．送信</td>
+        </tr>
+        <tr class="even">
+        <td>他国宛</td>
+        <td>１．手紙横のコンボから目当ての国を選択<br>２．手紙を書いて送信</td>
+        <td>１．目当ての国を地図から選択<br>２．国情報タブ「国宛」ボタン<br>３．手紙を書いて送信</td>
+        </tr>
+        <tr class="odd">
+        <td>部隊一覧</td>
+        <td>１．画面左下のリストから「部隊編成」を選択<br>２．「実行」ボタン</td>
+        <td>自国の国情報タブの「部隊」ボタン<br>または武将情報タブの「部隊」ボタン</td>
+        </tr>
+        <tr class="even">
+        <td>部隊一覧から部隊に入る</td>
+        <td>部隊を選択してボタンを押す</td>
+        <td>部隊リストから該当項目をクリック</td>
+        </tr>
+        <tr class="odd">
+        <td>部隊一覧から部隊から抜ける</td>
+        <td>部隊から脱げるボタンを押す</td>
+        <td>部隊リストから入隊中の部隊をクリック</td>
+        </tr>
+        <tr class="even">
+        <td>手紙を見る</td>
+        <td>画面下</td>
+        <td>手紙タブ</td>
+        </tr>
+        <tr class="odd">
+        <td>ON状況を確認</td>
+        <td>画面右側の都市情報下</td>
+        <td>ONLINEタブ</td>
+        </tr>
+        <tr class="even">
+        <td>指令確認</td>
+        <td>画面上部</td>
+        <td>地図の上。クリックで全文表示</td>
+        </tr>
+        <tr class="odd">
+        <td>他国都市諜報</td>
+        <td>会議室／国法／手紙にコピペ</td>
+        <td>都市情報タブの諜報ボタン</td>
+        </tr>
+        <tr class="even">
+        <td>他国都市諜報を確認</td>
+        <td>会議室／国法／手紙を確認</td>
+        <td>任意の都市を選択し、都市情報タブ</td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="司令部">司令部</h3>
+        <p>KMYに司令部は存在しません。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>やりたいこと</th>
+        <th>原作</th>
+        <th>KMY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>指令変更</td>
+        <td>司令部</td>
+        <td>国設定（メニューから）</td>
+        </tr>
+        <tr class="even">
+        <td>新規登録者勧誘文</td>
+        <td>司令部</td>
+        <td>国設定（メニューから）</td>
+        </tr>
+        <tr class="odd">
+        <td>同盟締結</td>
+        <td>（なし）</td>
+        <td>対象国を地図から選択し、国情報タブから</td>
+        </tr>
+        <tr class="even">
+        <td>同盟破棄</td>
+        <td>（なし）</td>
+        <td>対象国を地図から選択し、国情報タブから</td>
+        </tr>
+        <tr class="odd">
+        <td>宣戦布告</td>
+        <td>（なし）</td>
+        <td>対象国を地図から選択し、国情報タブから</td>
+        </tr>
+        <tr class="even">
+        <td>援軍要請</td>
+        <td>（なし）</td>
+        <td>１．対象国を地図から選択<br>２．対象国の国情報タブの「武将」ボタン<br>３．「派遣要請」ボタン</td>
+        </tr>
+        <tr class="odd">
+        <td>援軍派遣</td>
+        <td>（なし）</td>
+        <td>援軍に行く武将自身が武将情報タブから操作</td>
+        </tr>
+        <tr class="even">
+        <td>任命</td>
+        <td>司令部</td>
+        <td>国情報タブの「武将」ボタンから</td>
+        </tr>
+        <tr class="odd">
+        <td>解任</td>
+        <td>（なし）</td>
+        <td>任命のときに「一般」を選択</td>
+        </tr>
+        <tr class="even">
+        <td>統一後君主挨拶</td>
+        <td>（なし）</td>
+        <td>国設定（メニューから）</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="画面がおかしくなった場合は">画面がおかしくなった場合は</h2>
+        <p>何らかの理由で、画面表示がおかしくなったり、手紙や情報の更新が止まることがあります。その場合は、<code>F5</code>（または <code>Cmd+R</code>、その他の手段）を用いてブラウザ画面を更新してみてください。</p>
+        <section class="footnotes" role="doc-endnotes">
+        <hr />
+        <ol>
+        <li id="fn1" role="doc-endnote"><p>UIを使うユーザの体験。ここでは、ユーザがUIに対して好印象を持つようUIを工夫する行為をさす<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+        <li id="fn2" role="doc-endnote"><p>どのような画面サイズでもコンテンツを正常に表示できるよう、コンテンツの配置を工夫すること。昔は特定の画面サイズで見られることを前提に、コンテンツのサイズや配置を固定にしているサイトが多かった<a href="#fnref2" class="footnote-back" role="doc-backlink">↩</a></p></li>
+        </ol>
+        </section>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

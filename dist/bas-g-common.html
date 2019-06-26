@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ガイド（共通事項） - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">ガイド（共通事項）</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="概要">概要</h2>
+        <p><a href="bas-g-entry.html">新規登録</a>を終えた後、またはログインした後、ステータス画面に移動します。</p>
+        <p>ここでは、武将、都市、国の持つパラメータについて、簡単に説明します。</p>
+        <p>パラメータはたくさんあります。ここで全部覚える必要はなく、ガイドの続きのページでも都度説明します。気楽に読み流してください。<br />
+        最初にまとめて知るものとしてあまり重要ではないパラメータについては、名前をかっこで囲んでいます。適宜読み飛ばして、後で参照するなりしてください。</p>
+        <h2 id="武将">武将</h2>
+        <p>武将のパラメータは、PCでは画面左上、スマホでは画面最上部にある「武将」タブより確認できます。</p>
+        <h3 id="武力">武力</h3>
+        <p>武将の能力です。これが高いほど、戦闘で強くなります。通常は統率と併用します。</p>
+        <h3 id="知力">知力</h3>
+        <p>武将の能力です。これが高いほど、内政が早く進みます。</p>
+        <h3 id="統率">統率</h3>
+        <p>武将の能力です。これが高いほど、たくさんの兵士を雇えます。雇える兵指数の最大は、統率と同じです。</p>
+        <h3 id="人望">人望</h3>
+        <p>武将の能力です。これが高いほど、民忠を早く上げられます。使い道ははっきり言ってないです（最序盤では必要とされますが、本当に最序盤だけです）。<br />
+        出身で武家・文官を選んだ場合、人望は最低の <code>5</code> になっているはずです。</p>
+        <h3 id="金">金</h3>
+        <p>武将の所持する金です。内政、軍備などあらゆることに使えます。</p>
+        <h3 id="米">（米）</h3>
+        <p>武将の所持する米です。はっきり言って、持久戦にならない限り <code>20000</code> を超える分は持っているだけ無駄です。都市の相場が <code>1.2</code> またはそれに近い値になっていたら、早々に米売買コマンドで売って金にかえましょう。</p>
+        <h3 id="貢献階級値階級">（貢献、階級値、階級）</h3>
+        <p>内政など国に貢献するコマンドを実行すると、貢献が上がります。（<a href="bas-commands.html">コマンド一覧</a>も参照）</p>
+        <p>毎年 <code>1</code>、<code>7</code> 月になると、貢献は <code>0</code> となり、もとあった貢献は階級値に加算されます。</p>
+        <p>階級値が一定の値に到達すると、階級が上がります。</p>
+        <h4 id="収入">（収入）</h4>
+        <p>毎年 <code>1</code> 月には金、<code>7</code> 月には米の収入を得ます。収入は、階級が高いほど一度にたくさんもらえます。収入は通常は階級に応じた一定の寮となりますが、国全体の収入が少ない場合は、貢献に応じて変動することがあります。</p>
+        <p>詳しい説明は<a href="dom-income.html">収入</a>にあります。</p>
+        <h3 id="兵種">兵種</h3>
+        <p>武将の兵種です。戦闘時の強さに影響します。</p>
+        <p>徴兵することで変更できます。</p>
+        <p><a href="dip-soldier.html">兵種</a>に詳しい説明がありますが、ガイドの戦争編でも説明します。</p>
+        <h3 id="兵士小隊">兵士小隊</h3>
+        <p>武将の兵士小隊数です。他の三国志NETでは「兵士数」と呼ばれます。文字通り、兵士の数で、武将の戦闘におけるヒットポイントです。上限は武将の統率です。</p>
+        <p>徴兵することで増やすことができます。</p>
+        <h3 id="訓練">（訓練）</h3>
+        <p>武将の訓練値です。これが高いほど戦争の時に有利になりますが、<code>0</code> のまま戦争する人も多いです。</p>
+        <h3 id="陣形">（陣形）</h3>
+        <p>※第0.7期現在、陣形はただの飾りでしかないので気にしなくて大丈夫です</p>
+        <p>武将の戦闘時に使用する陣形です。陣形には陣形経験値、陣形レベル、陣形ポイントが存在します。</p>
+        <ul>
+        <li>陣形の種類、レベルにより、戦闘時に特定の補正がかかります</li>
+        <li>陣形経験値がたまると陣形レベルが上がり、陣形が強化されます</li>
+        <li>陣形そのものは、陣形ポイントを使って増やします</li>
+        </ul>
+        <p><a href="dip-formation.html">陣形</a>に詳しい説明があります。</p>
+        <h3 id="技能ポイント">（技能ポイント）</h3>
+        <p>武将は、出身に応じて技能を持ちます。武家には武家向けの、文官には文官向けの技能が用意されています。<br />
+        技能ポイントが <code>10</code> など決まった値に到達すると、新しい技能を獲得することができます。</p>
+        <p><a href="bas-from.html">出身</a>に詳しい説明がありますが、ガイドの内政編でも技能の獲得について説明します。</p>
+        <h3 id="アイテム">（アイテム）</h3>
+        <p>武将の持っているアイテムです。所持数には上限があります。現在持っているアイテムと効果は、「アイテム」ボタンをクリックすることで確認できます。</p>
+        <p>売買、内政などで手に入れます。<a href="bas-item.html">アイテム</a>に詳しい説明がありますが、ガイドの内政編でも説明します。</p>
+        <p>他の三国志NETでいう「武器」「書物」をさらに強化したシステムです。</p>
+        <h2 id="都市">都市</h2>
+        <h3 id="特化">（特化）</h3>
+        <p>都市には特化があり、特化ごとに内政の最大値が変化します。基本的には無視します。</p>
+        <h3 id="農民">農民</h3>
+        <p>都市の人口です。これが高いほど、<code>1</code>、<code>7</code> 月の金・米収入が増えるだけでなく、たくさんの兵士を徴兵できます。</p>
+        <p>おもに、民忠を上げることで回復します。</p>
+        <h3 id="民忠">民忠</h3>
+        <p>都市の民忠です。これが <code>50</code> より高いほど、<code>1</code>、<code>7</code> 月に農民が増えます。逆に低いと、農民は減ってしまいます。</p>
+        <p>おもに、徴兵の時に減り、米施しによって回復します。</p>
+        <h3 id="農業商業">農業、商業</h3>
+        <p>都市の農業と商業です。これが高いほど、<code>1</code>、<code>7</code> 月の金・米収入が増えます。</p>
+        <h3 id="技術">技術</h3>
+        <p>都市の技術です。これが高いほど、高級兵種が雇えるだけでなく、城壁を守る兵士の強さも変わります。</p>
+        <h3 id="城壁">城壁</h3>
+        <p>都市の城壁です。これが高いほど、落城しにくくなります。城壁は、戦争において、都市のヒットポイントに相当します。</p>
+        <h3 id="都市施設">（都市施設）</h3>
+        <p>都市に固有の施設です。耐久を上げることによって、効果を発揮します。種類によって、効果が変わります。</p>
+        <p><a href="dom-townbuilding.html">都市施設</a>に詳しい説明があります。</p>
+        <h3 id="守備">守備</h3>
+        <p>都市を守備している武将数です。戦争において都市に攻め込まれたとき、守備があると守備武将が応戦します。（守備武将がいなければ城壁との戦闘になります）</p>
+        <h2 id="国">国</h2>
+        <h3 id="政策ポイント">（政策ポイント）</h3>
+        <p>国の持つ政策ポイントです。政策開発コマンドによって上げることができます</p>
+        <h3 id="金米収入">（金・米収入）</h3>
+        <p>国の直近の収入量です。</p>
+        <h3 id="国庫残高">（国庫残高）</h3>
+        <p>国庫の残高金です。</p>
+        <h2 id="このあと">このあと</h2>
+        <p>序盤にやること、内政について説明します。<a href="bas-g-domestic.html">ガイド（内政編）</a>へ移動します</p>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

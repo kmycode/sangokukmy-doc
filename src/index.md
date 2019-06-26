@@ -14,17 +14,15 @@ category: 0
 * [三国志NETとは](bas-about.html)
   * [他の三国志NETとの違い](bas-differences.html)
 * [ゲームの流れ](bas-cycle.html)
-* このゲームでできること
+* ガイド（チュートリアル）
+  * [新規登録](bas-g-entry.html)
+  * [共通事項](bas-g-common.html)
+  * [内政](bas-g-domestic.html)
+  * [戦争](bas-g-war.html)
 * [武将の役割分担](bas-jobs.html)
-* 新規登録
-* チュートリアル(武官)
-* チュートリアル(文官)
-* チュートリアル(仁官)
+* [画面の見方](bas-ui.html)
 
 #### 基本事項
-* 画面の見方
-  * 指令
-  * 情報
 * 役職
 * [コマンド](bas-command.html)
   * [コマンド一覧](bas-commands.html)
@@ -33,13 +31,15 @@ category: 0
 * [アイテム](bas-item.html)
   * [アイテム一覧](bas-items.html)
 * [出身](bas-from.html)
+  * [都市巡回](bas-townpatrol.html)
+  * [都市投資](bas-towninvest.html)
 * 手紙
 * 会議室
 * 統一とリセット
 * 用語集
 
 #### その他
-* オンライン
+* [オンライン](bas-online.html)
 * 個人設定
 * [特殊タグ](bas-tags.html)
 * [リアルタイム更新](bas-realtime.html)
@@ -66,7 +66,8 @@ category: 0
 #### 戦争・戦闘
 * 戦争
 * [攻略](dip-townwar.html)
-* [兵種](dip-soldiers.html)
+* [兵種](dip-soldier.html)
+  * [兵種一覧](dip-soldiers.html)
   * [徴兵と農民](dip-getsol.html)
 * [城壁と守兵](dip-wallguards.html)
 * [陣形](dip-formation.html)
@@ -85,7 +86,7 @@ category: 0
 ### その他
 * [利用規約](oth-termsofservice.html)
 * [プライバシーポリシー](oth-privacypolicy.html)
-* [第0.7期実装概要](oth-plan.html)
+* [第0.8期実装概要](oth-plan.html)
 
 #### ドラフト（実装予定／計画中）
 * [傀儡国家](dip-puppet.html)

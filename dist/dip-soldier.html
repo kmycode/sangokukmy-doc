@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>兵種と補正 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-3">
+        <div class="category category-3">兵種と補正</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-3">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-3">
+        <h2 id="概要">概要</h2>
+        <p>戦争の際に兵種を用います。選択する兵種によって、戦闘時の能力が変化します。一般に、能力の高い兵種ほど高価です。また、特定<a href="bas-from.html">技能</a>がないと徴兵不可能な兵種も存在します。</p>
+        <p><a href="dip-soldiers.html">兵種一覧</a>、<a href="dip-formations.html">陣形一覧</a>、<a href="bas-from.html">技能一覧</a>も参照してください。</p>
+        <h2 id="属性">属性</h2>
+        <p>兵種には属性が存在します。属性は、他の属性や要素と組み合わせることで、効果をもたらします。</p>
+        <ul>
+        <li>特定<a href="dip-formation.html">陣形</a>を採用した他の属性の兵種と戦闘することで、他の補正に優劣がつく</li>
+        <li>役職は兵種ではなく兵種属性に対して補正をかける。例えば騎兵将軍は騎兵属性の兵種すべてに補正がつく</li>
+        </ul>
+        <p>属性には以下の種類があります。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>代表的な兵種</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>歩兵</td>
+        <td>軽戟兵</td>
+        </tr>
+        <tr class="even">
+        <td>騎兵</td>
+        <td>軽騎兵</td>
+        </tr>
+        <tr class="odd">
+        <td>弓兵</td>
+        <td>弓兵、弩兵</td>
+        </tr>
+        <tr class="even">
+        <td>護衛</td>
+        <td>禁兵、壁守兵</td>
+        </tr>
+        <tr class="odd">
+        <td>壁</td>
+        <td>守兵</td>
+        </tr>
+        <tr class="even">
+        <td>攻城</td>
+        <td>井闌</td>
+        </tr>
+        <tr class="odd">
+        <td>属性なし</td>
+        <td>神鬼兵</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="攻撃防御補正">攻撃、防御補正</h2>
+        <p>武将には、自分の武力から算出される元来の攻撃力が存在します。それに兵種の攻撃力・防御力補正を上乗せしたものが、実際の戦闘で使用されます。</p>
+        <p>陣形・兵種などの条件によっては、相手が特定属性だった場合のみに補正がつくこともあります。<br />
+        例えば攻城兵器の井闌は、戦闘相手が壁属性（守兵）だった場合に限り、攻撃力と防御力に補正が追加されます。</p>
+        <h2 id="突撃">突撃</h2>
+        <p>突撃確率が設定されている場合、その確率に従って突撃することがあります。突撃するとその戦闘ターンに限り攻撃力が増大します。</p>
+        <p>例えば突撃確率 <code>3%</code>、突撃攻撃力 <code>75</code> の場合、<code>3%</code> の確率で攻撃力が <code>75</code> 加増されます。<br />
+        乱数次第では全く意味をなさず、むしろダメージのほうが大きいこともあります <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。一方で、相手に甚大な被害を与えることも可能になります。</p>
+        <h2 id="連戦">連戦</h2>
+        <p>連戦確率が設定されている場合、その確率に従って連戦をおこなうことがあります。連戦するには、確率のほかにも、以下の条件を満たす必要があります。</p>
+        <ul>
+        <li>自分が戦闘で勝利し、かつ兵士小隊が残っている</li>
+        <li>これまでの連戦を含む戦闘ターンの合計が <code>50</code> を超えていない</li>
+        </ul>
+        <p>また、これにさらに条件を加えた特殊な連戦形態が存在する場合もあります。都度説明します。</p>
+        <section class="footnotes" role="doc-endnotes">
+        <hr />
+        <ol>
+        <li id="fn1" role="doc-endnote"><p>これ自体は乱数によるものであって突撃は関係なく、どの兵種・条件でも起こりうるものです<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+        </ol>
+        </section>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

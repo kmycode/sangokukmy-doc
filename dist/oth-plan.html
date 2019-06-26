@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>第0.7期以降の実装予定 - 三国志NET KMY Version Documentation</title>
+  <title>第0.8期の実装予定 - 三国志NET KMY Version Documentation</title>
   <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
@@ -24,7 +24,7 @@
     <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
 
       <div id="category-group" class="category-pick category-pick-4">
-        <div class="category category-4">第0.7期以降の実装予定</div>
+        <div class="category category-4">第0.8期の実装予定</div>
       </div>
 
       <div id="category-nav-group" class="category-menu category-menu-picked-4">
@@ -36,377 +36,487 @@
 
       <div id="article" class="theme-4">
         <h2 id="概要">概要</h2>
-        <p>第0.7期の実装予定です。開発の進行などにより一部の実装を巡演する場合があります。</p>
-        <h2 id="追加変更">追加・変更</h2>
-        <h3 id="コマンド">コマンド</h3>
+        <p>第0.8期の実装予定です。開発の進行などにより一部の実装を順延する場合があります。</p>
+        <h2 id="政策">政策</h2>
+        <h2 id="アイテム">アイテム</h2>
         <table>
         <thead>
         <tr class="header">
-        <th>コマンド名</th>
-        <th>条件</th>
-        <th>消費</th>
-        <th>能力</th>
-        <th>経験値</th>
-        <th>貢献</th>
-        <th>備考</th>
+        <th>名前</th>
+        <th>数量</th>
+        <th>価格</th>
+        <th>市</th>
+        <th>隠</th>
+        <th>効果</th>
+        <th>売</th>
+        <th>譲</th>
+        <th>探出</th>
         </tr>
         </thead>
         <tbody>
         <tr class="odd">
-        <td>アイテム購入</td>
-        <td></td>
-        <td>可変</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>傷寒論</td>
+        <td>8</td>
+        <td>36000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>人望 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
         <td></td>
         </tr>
         <tr class="even">
-        <td>アイテム売却</td>
-        <td></td>
-        <td>可変</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>十六国春秋</td>
+        <td>8</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
         <td></td>
         </tr>
         <tr class="odd">
-        <td>アイテム譲渡</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>春秋左氏伝</td>
+        <td>8</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
         <td></td>
         </tr>
         <tr class="even">
-        <td>陣形獲得</td>
+        <td>呂氏春秋</td>
+        <td>8</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
         <td></td>
-        <td>陣形ポイント</td>
-        <td>統率</td>
-        <td>統率50</td>
-        <td>30</td>
-        <td>陣形１種のみなので実質使用不可</td>
         </tr>
         <tr class="odd">
-        <td>陣形変更</td>
+        <td>呉越春秋</td>
+        <td>4</td>
+        <td>55000</td>
         <td></td>
+        <td>○</td>
+        <td>知力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
         <td></td>
-        <td>統率</td>
-        <td>統率50</td>
-        <td>30</td>
-        <td>陣形１種のみなので実質使用不可</td>
         </tr>
         <tr class="even">
+        <td>兵法二十四編</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>戦国策</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>史記</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>易経</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>統率 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>書経</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>統率 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>詩経</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>統率 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>楽経</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>統率 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td>文</td>
+        </tr>
+        <tr class="odd">
+        <td>礼記</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>統率 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>茶</td>
+        <td>8</td>
+        <td>200,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+100k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>青釉穀倉罐</td>
+        <td>8</td>
+        <td>200,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+100k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>酒杯</td>
+        <td>8</td>
+        <td>200,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+100k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>算盤</td>
+        <td>4</td>
+        <td>400,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+200k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>呂氏鏡</td>
+        <td>4</td>
+        <td>400,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+200k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>博山炉</td>
+        <td>2</td>
+        <td>600,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+300k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>金象嵌の壺</td>
+        <td>2</td>
+        <td>600,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+300k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>玉龍紋璧</td>
+        <td>2</td>
+        <td>600,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+300k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>九錫</td>
+        <td>1</td>
+        <td>1,000,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+500k</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>和氏の璧</td>
+        <td>1</td>
+        <td>4,000,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で金 <code>+2M</code></td>
+        <td></td>
+        <td>○</td>
+        <td>商</td>
+        </tr>
+        <tr class="even">
+        <td>中行説の霊</td>
+        <td>1</td>
+        <td>5,000,000</td>
+        <td></td>
+        <td>○</td>
+        <td>使用で全ての中立異民族が敵対化。異民族なければ出現</td>
+        <td></td>
+        <td></td>
+        <td>武</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="出身技能">出身・技能</h2>
+        <h3 id="武家">武家</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>武家Lv.1</td>
+        <td>0</td>
+        <td>毎月武力Ex <code>+7</code></td>
+        </tr>
+        <tr class="even">
+        <td>武家Lv.2</td>
+        <td>10</td>
+        <td>攻撃力 <code>+20</code></td>
+        </tr>
+        <tr class="odd">
+        <td>武家Lv.3</td>
+        <td>10</td>
+        <td>徴兵に必要な金 <code>-15%</code></td>
+        </tr>
+        <tr class="even">
+        <td>武家Lv.4</td>
+        <td>10</td>
+        <td>兵種 連弩兵、攻撃力 <code>+20</code>、突撃確率 <code>+2%</code>、突撃威力 <code>+80</code></td>
+        </tr>
+        <tr class="odd">
+        <td>武家Lv.5</td>
+        <td>10</td>
+        <td>コマンド 都市巡回、戦闘が <code>1</code> ターンで終了時の連戦確率 <code>+80%</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h4 id="都市投資の結果">都市投資の結果</h4>
+        <p>他の結果の条件を満たさなかった場合：</p>
+        <ul>
+        <li>武力Ex <code>+100</code></li>
+        <li>城壁強化 <code>+12</code>、武力Ex <code>+50</code></li>
+        <li>城壁増築 <code>+4</code>、武力Ex <code>+50</code></li>
+        <li>政策開発 <code>+12</code>、武力Ex <code>+50</code></li>
+        <li>金 <code>武力</code> から <code>2000</code> の間</li>
+        <li>陣形経験値 <code>+50</code></li>
+        </ul>
+        <h3 id="文官">文官</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>文官Lv.1</td>
+        <td>0</td>
+        <td>毎月知力Ex <code>+7</code></td>
+        </tr>
+        <tr class="even">
+        <td>文官Lv.2</td>
+        <td>8</td>
+        <td>内政効果 <code>+40%</code></td>
+        </tr>
+        <tr class="odd">
+        <td>文官Lv.3</td>
+        <td>8</td>
+        <td>政策開発時、未取得政策ブースト確率 <code>+0.5%</code></td>
+        </tr>
+        <tr class="even">
+        <td>文官Lv.4</td>
+        <td>12</td>
+        <td>護衛属性含む兵種使用時、攻撃力 <code>+20</code>、防御力 <code>+40</code></td>
+        </tr>
+        <tr class="odd">
+        <td>文官Lv.5</td>
+        <td>12</td>
+        <td>内政効果 <code>+40%</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h3 id="商人">商人</h3>
+        <p>初期：金 <code>20000</code></p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>必要P</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>商人Lv.1</td>
+        <td>0</td>
+        <td>アイテム上限 <code>+2</code></td>
+        </tr>
+        <tr class="even">
+        <td>商人Lv.2</td>
+        <td>5</td>
+        <td>米売買上限 <code>+5000</code>、貢献 <code>+15</code></td>
+        </tr>
+        <tr class="odd">
+        <td>商人Lv.3</td>
+        <td>10</td>
+        <td>アイテム購入価格 <code>-20%</code>、内政時出現 <code>+0.4%</code>、アイテム上限 <code>+2</code></td>
+        </tr>
+        <tr class="even">
+        <td>商人Lv.4</td>
+        <td>15</td>
+        <td>コマンド 都市投資</td>
+        </tr>
+        <tr class="odd">
+        <td>商人Lv.5</td>
+        <td>15</td>
+        <td>米売買上限 <code>+3000</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="その他">その他</h2>
+        <h3 id="追加">追加</h3>
+        <ul>
+        <li>アイテム「使用」コマンド</li>
+        <li>異民族の下位に以下の分類を追加
+        <ul>
+        <li>中立：第0.7期の異民族と同じ。自発的な宣戦布告を行わない</li>
+        <li>敵対：第0.6期以前の異民族と同じ。自発的な宣戦布告を行う。アイテム使用により、中立から敵対へ変化</li>
+        </ul></li>
+        </ul>
+        <h3 id="変更">変更</h3>
+        <ul>
+        <li>他国武将へのアイテム譲渡を許可</li>
+        <li>人望が <code>150</code> 未満の場合、緊急米施し実行による貢献 <code>30</code></li>
+        </ul>
+        <h4 id="コマンド実行時のアイテム入手確率">コマンド実行時のアイテム入手確率</h4>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>コマンド</th>
+        <th>出現確率</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>農業開発</td>
+        <td><code>330</code>分の1</td>
+        </tr>
+        <tr class="even">
+        <td>商業発展</td>
+        <td>同上</td>
+        </tr>
+        <tr class="odd">
+        <td>技術開発</td>
+        <td>同上</td>
+        </tr>
+        <tr class="even">
+        <td>城壁強化</td>
+        <td>同上</td>
+        </tr>
+        <tr class="odd">
+        <td>米施し</td>
+        <td>同上</td>
+        </tr>
+        <tr class="even">
+        <td>緊急米施し</td>
+        <td>同上</td>
+        </tr>
+        <tr class="odd">
         <td>都市巡回</td>
-        <td>特定技能</td>
-        <td>金50</td>
-        <td>可変</td>
-        <td>可変</td>
-        <td>20</td>
-        <td></td>
+        <td><code>240</code>分の1</td>
+        </tr>
+        <tr class="even">
+        <td>政策開発</td>
+        <td><code>330</code>分の1</td>
+        </tr>
+        <tr class="odd">
+        <td>能力強化</td>
+        <td><code>800</code>分の1</td>
+        </tr>
+        <tr class="even">
+        <td>戦争</td>
+        <td><code>120</code>分の1（侵攻先都市から）</td>
         </tr>
         <tr class="odd">
         <td>都市投資</td>
-        <td>特定技能</td>
-        <td>可変</td>
-        <td>知力</td>
-        <td>知力500</td>
-        <td>200</td>
-        <td>実行から <code>3</code> 年後に成果。同時実行不可</td>
+        <td><code>12</code>分の1（最低）</td>
         </tr>
         </tbody>
         </table>
-        <h3 id="陣形">陣形</h3>
-        <p><a href="dip-formations.html">陣形一覧</a>にあるもののうち、通常が追加されます</p>
-        <h3 id="アイテム">アイテム</h3>
-        <p><a href="bas-items.html">アイテム一覧</a>にあるものがすべて追加されます</p>
-        <h3 id="出身技能">出身・技能</h3>
-        <p><a href="bas-from.html">出身</a>にあるもののうち、武家、文官、商人が追加されます</p>
-        <h3 id="その他">その他</h3>
-        <h4 id="追加">追加</h4>
+        <h3 id="修正">修正</h3>
         <ul>
-        <li>コマンド入力手段「挿入」「削除」「繰返」（一部は第0.6期時点で実装済）</li>
-        <li>異民族を滅亡せしめることで政策「胡人徴発」</li>
-        <li>兵種属性
-        <ul>
-        <li>役職補正の修正のほか、陣形への応用も検討</li>
-        </ul></li>
-        <li>異民族の名前
-        <ul>
-        <li>匈奴</li>
-        <li>羯</li>
-        <li>鮮卑</li>
-        <li>氐</li>
-        <li>奚</li>
-        <li>夷</li>
-        <li>俚</li>
-        </ul></li>
-        <li>登用文に国名表記</li>
+        <li>武官Lv.3で剣兵が無料で徴兵できる問題</li>
         </ul>
-        <h4 id="変更">変更</h4>
-        <ul>
-        <li>能力強化コマンド入力時のUIを改善</li>
-        <li>米売買の上限 <code>20000</code> → <code>10000</code></li>
-        <li>役職補正の対象を兵種から属性へ変更</li>
-        <li>守兵の決定基準を変更　政策から都市技術
-        <ul>
-        <li><code>300</code>以上でB、<code>600</code>以上でC、<code>999</code>以上でD</li>
-        </ul></li>
-        <li>他国の政策／政策取得を不可視</li>
-        <li>異民族
-        <ul>
-        <li>出現時期：更新開始直後</li>
-        <li>自発的な宣戦布告なし</li>
-        <li>滅亡せしめることを統一条件から除外</li>
-        <li>初期能力を下方修正</li>
-        <li>初期武将構成　武官 <code>2</code>、文官 <code>1</code>、仁官 <code>1</code>、倭の場合追加で武官 <code>1</code>、仁官 <code>1</code></li>
-        </ul></li>
-        <li>政策「衝車常備」：攻城属性を持った兵種（井蘭）使用時は無効</li>
-        <li>兵種名
-        <ul>
-        <li>雑兵 → 剣兵</li>
-        <li>軽歩兵 → 軽戟兵</li>
-        <li>重歩兵 → 重戟兵</li>
-        </ul></li>
-        <li>都市施設「城門開放」効果　最大 <code>480</code> → <code>1600</code></li>
-        <li>ログアウト時、これまでは武将のすべてのアクセストークンを削除していたが、ログアウトを行った認証情報に含まれるアクセストークンのみを削除するよう修正
-        <ul>
-        <li>複数端末からログインしていた場合、一方でログアウトすると他の端末からも再度IDとパスワード入力が必要になっていたのを、しなくてもいいよう修正したという意味</li>
-        </ul></li>
-        </ul>
-        <h4 id="修正">修正</h4>
-        <ul>
-        <li>攻略布告の瞬間にコマンドリストが更新されず、攻略が表示されない問題</li>
-        <li>勢力図でログの順番がおかしくなることがある問題</li>
-        <li>滅亡した国の武将から来た登用文が利用できる問題
-        <ul>
-        <li>滅亡時に登用文は無効化される。万が一有効でも、登用承諾時にエラー</li>
-        </ul></li>
-        </ul>
-        <h2 id="政策">政策</h2>
-        <h3 id="aツリー農業都市">Aツリー（農業都市）</h3>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>名前</th>
-        <th>基本政策P</th>
-        <th>必要政策</th>
-        <th>追加効果</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><strong>経済論</strong></td>
-        <td>4000</td>
-        <td></td>
-        <td>蝗害、疫病被害軽減、金・米収入増大</td>
-        </tr>
-        <tr class="even">
-        <td>貯蔵</td>
-        <td>4000</td>
-        <td>経済論</td>
-        <td>国庫最大 <code>+1M</code></td>
-        </tr>
-        <tr class="odd">
-        <td>徴収</td>
-        <td>3000</td>
-        <td>貯蔵</td>
-        <td>国庫納入する収入余剰最大 <code>+2k</code></td>
-        </tr>
-        <tr class="even">
-        <td>増給</td>
-        <td>2000</td>
-        <td>徴収</td>
-        <td>武将収入の階級加算 <code>+50</code></td>
-        </tr>
-        <tr class="odd">
-        <td>地下貯蔵</td>
-        <td>2000</td>
-        <td>増給</td>
-        <td>国庫最大 <code>+1M</code></td>
-        </tr>
-        <tr class="even">
-        <td>壁に耳</td>
-        <td>4000</td>
-        <td>地下貯蔵</td>
-        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
-        </tr>
-        <tr class="odd">
-        <td>胃の中</td>
-        <td>2000</td>
-        <td>壁に耳</td>
-        <td>国庫最大 <code>+1M</code></td>
-        </tr>
-        <tr class="even">
-        <td>障子に目</td>
-        <td>4000</td>
-        <td>胃の中</td>
-        <td>国庫納入する収入余剰の最大 <code>x2</code></td>
-        </tr>
-        <tr class="odd">
-        <td>血管の中</td>
-        <td>3000</td>
-        <td>障子に目</td>
-        <td>国庫最大 <code>+1M</code></td>
-        </tr>
-        <tr class="even">
-        <td>災害対策</td>
-        <td>3000</td>
-        <td>経済評論</td>
-        <td>洪水、地震の被害軽減</td>
-        </tr>
-        <tr class="odd">
-        <td>復興支援</td>
-        <td>2000</td>
-        <td>災害対策</td>
-        <td>洪水、地震発生時、民忠 <code>+10</code>、都市につき政策ポイント <code>+30</code></td>
-        </tr>
-        </tbody>
-        </table>
-        <h3 id="bツリー商業都市">Bツリー（商業都市）</h3>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>名前</th>
-        <th>基本政策P</th>
-        <th>必要政策</th>
-        <th>追加効果</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><strong>人材開発</strong></td>
-        <td>3000</td>
-        <td></td>
-        <td>政務官 <code>+1</code></td>
-        </tr>
-        <tr class="even">
-        <td>武官国家</td>
-        <td>1500</td>
-        <td>人材開発</td>
-        <td>武官数につき毎ターン政策ポイント <code>+2</code></td>
-        </tr>
-        <tr class="odd">
-        <td>文官国家</td>
-        <td>2000</td>
-        <td>武官国家</td>
-        <td>文官数につき毎ターン政策ポイント <code>+4</code></td>
-        </tr>
-        <tr class="even">
-        <td>号令</td>
-        <td>3000</td>
-        <td>文官国家</td>
-        <td>政務官部隊長が雇用可能</td>
-        </tr>
-        <tr class="odd">
-        <td>人情国家</td>
-        <td>2000</td>
-        <td>号令</td>
-        <td>仁官数につき毎ターン政策ポイント <code>+8</code></td>
-        </tr>
-        <tr class="even">
-        <td>施設連携</td>
-        <td>3000</td>
-        <td>施設連携</td>
-        <td>強化系都市施設効果 <code>+7</code></td>
-        </tr>
-        <tr class="odd">
-        <td>採用策</td>
-        <td>3000</td>
-        <td>人情国家</td>
-        <td>政務官 <code>+1</code></td>
-        </tr>
-        <tr class="even">
-        <td>武官の肇</td>
-        <td>2000</td>
-        <td>武官国家</td>
-        <td>取得から <code>144</code> ターン武力と知力の高い方を内政に使用<br>文官国家をブースト</td>
-        </tr>
-        <tr class="odd">
-        <td>密偵</td>
-        <td>4000</td>
-        <td></td>
-        <td>斥候 <code>+2</code></td>
-        </tr>
-        </tbody>
-        </table>
-        <h3 id="cツリー城塞都市">Cツリー（城塞都市）</h3>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>名前</th>
-        <th>基本政策P</th>
-        <th>必要政策</th>
-        <th>追加効果</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><strong>賊の監視</strong></td>
-        <td>3000</td>
-        <td></td>
-        <td>賊の被害軽減</td>
-        </tr>
-        <tr class="even">
-        <td>賊の殲滅</td>
-        <td>2000</td>
-        <td>賊の監視</td>
-        <td>賊発生時、都市につき政策ポイント <code>+30</code></td>
-        </tr>
-        <tr class="odd">
-        <td>正義とは</td>
-        <td>2000</td>
-        <td>賊の殲滅</td>
-        <td>義賊の効果増大</td>
-        </tr>
-        <tr class="even">
-        <td>攻城</td>
-        <td>4000</td>
-        <td>正義とは</td>
-        <td>井闌1小隊あたり徴兵コスト <code>-50</code></td>
-        </tr>
-        <tr class="odd">
-        <td>檄</td>
-        <td>3000</td>
-        <td>攻城</td>
-        <td>義勇兵が徴兵可能</td>
-        </tr>
-        <tr class="even">
-        <td>衝車常備</td>
-        <td>4000</td>
-        <td>檄</td>
-        <td>戦闘時、常に城壁攻撃力 <code>+60</code></td>
-        </tr>
-        </tbody>
-        </table>
-        <h3 id="建国都市の特化によるブースト">建国都市の特化によるブースト</h3>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>特化</th>
-        <th>ブースト政策</th>
-        <th>初期政策P補正</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>農業都市</td>
-        <td>経済論、貯蔵、地下貯蔵</td>
-        <td>0</td>
-        </tr>
-        <tr class="even">
-        <td>商業都市</td>
-        <td>徴収、人材開発、賊の監視</td>
-        <td>500</td>
-        </tr>
-        <tr class="odd">
-        <td>城塞都市</td>
-        <td>号令、賊の監視、正義とは、攻城</td>
-        <td>-1000</td>
-        </tr>
-        </tbody>
-        </table>
       </div>
 
       <div id="article-footer">
