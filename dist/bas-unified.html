@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>統一とリセット - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">統一とリセット</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-1">
+        <h2 id="概要">概要</h2>
+        <p>三国志NETは、他の主要なオンラインゲームのように、同一の状態が永遠に続くゲームではありません。どこかの国が統一すると、それ以上のゲーム続行が不可能になるため、リセットがされます。本項目では、それら一連の動作について解説します。</p>
+        <h2 id="統一">統一</h2>
+        <p>建国された国のうち、どれか１つの国が大陸を統一することです。</p>
+        <h3 id="厳密な統一条件">厳密な統一条件</h3>
+        <p>どれかの都市が支配されたタイミングで、以下のすべてを満たす必要があります。</p>
+        <ul>
+        <li>無所属の都市が存在しない</li>
+        <li>以下のいずれかを満たしている
+        <ul>
+        <li>中立な<a href="dip-terrorist.html">異民族</a>を除き現存している国が１つのみであること</li>
+        <li>中立な異民族のみが存在していること</li>
+        </ul></li>
+        </ul>
+        <p>そのため、以上の条件を満たしている限り、中立な異民族を含む2国が残存した状態で統一となることがあります。<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+        <h3 id="統一後の変化">統一後の変化</h3>
+        <p>統一後は、おもに以下の処理が停止します。</p>
+        <ul>
+        <li>農民反乱</li>
+        <li>異民族発生</li>
+        </ul>
+        <p>また、以下のことができるようになります。</p>
+        <ul>
+        <li>統一国君主に限り、あいさつの入力（国設定から）</li>
+        </ul>
+        <h2 id="リセット">リセット</h2>
+        <p>リセットは、統一の <code>24</code> 時間後の最初の <code>21</code> 時になされます。</p>
+        <p>例えば <code>20</code> 時に統一した場合は翌日 <code>21</code> 時、<code>23</code> 時に統一した場合は翌々日 <code>21</code> 時にリセットとなります。これらはトップページで年月を確認できるほか、コマンドリストの行の色も変化します。</p>
+        <h3 id="処理">処理</h3>
+        <p>リセットにおいては、原則として、統一情報を除く<strong>全てのデータが削除</strong>されます。<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+        <h3 id="リセット後">リセット後</h3>
+        <p>リセット後は、また最初から<a href="bas-g-entry.html">新規登録</a>または建国をおこなうことで、ゲームを最初からやり直し、その期の統一を目指します。</p>
+        <section class="footnotes" role="doc-endnotes">
+        <hr />
+        <ol>
+        <li id="fn1" role="doc-endnote"><p>中立な異民族を含む3国が存在する状態下において、中立な異民族が残り2国のうちいずれかを滅ぼした場合、「A国がB国を滅ぼしたのでC国が統一」となることがあります。第0.7期に実例があります<a href="#fnref1" class="footnote-back" role="doc-backlink">↩</a></p></li>
+        <li id="fn2" role="doc-endnote"><p>厳密には、データベースのテーブルを <code>TRANCATE</code> ではなく <code>DELETE</code> で初期化しているため、<code>AUTO_INCREMENT</code> の付与されたID列のメタ情報は初期化されません。そのため、IDは前期から連続したものが使用され、蓄積されます。なお、現状IDは <code>UNSIGNED INT</code> 型となっていますが、プログラム内では <code>int</code> にキャストされることもあります。これに巻き込まれたデータにおいては <code>2^31-1</code>、つまり <code>2,147,483,647</code> までの数値が有効になります。最もIDリソースを消費するデータが仮に1期に <code>300,000</code> 分のIDを進めたとしても、IDリソースの枯渇には約 <code>7000</code> 期まで到達する必要があります<a href="#fnref2" class="footnote-back" role="doc-backlink">↩</a></p></li>
+        </ol>
+        </section>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -37,8 +37,52 @@
       <div id="article" class="theme-4">
         <h2 id="概要">概要</h2>
         <p>第0.8期の実装予定です。開発の進行などにより一部の実装を順延する場合があります。</p>
-        <h2 id="政策">政策</h2>
+        <h2 id="陣形">陣形</h2>
+        <h3 id="通常">通常</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>Lv</th>
+        <th>必要Ex</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>1</td>
+        <td>0</td>
+        <td>なし</td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>1000</td>
+        <td>攻撃力 <code>+4</code></td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>3000</td>
+        <td>攻撃力 <code>+8</code></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>6000</td>
+        <td>攻撃力 <code>+16</code></td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>10000</td>
+        <td>攻撃力 <code>+32</code></td>
+        </tr>
+        </tbody>
+        </table>
         <h2 id="アイテム">アイテム</h2>
+        <h3 id="削除">削除</h3>
+        <ul>
+        <li>槍（武力 <code>+1</code>）</li>
+        <li>戟（武力 <code>+1</code>）</li>
+        <li>弓（武力 <code>+1</code>）</li>
+        </ul>
+        <h3 id="来期のすべてのアイテム追加変更含む">来期のすべてのアイテム（追加／変更含む）</h3>
         <table>
         <thead>
         <tr class="header">
@@ -55,19 +99,305 @@
         </thead>
         <tbody>
         <tr class="odd">
-        <td>傷寒論</td>
-        <td>8</td>
-        <td>36000</td>
+        <td>大金槌</td>
+        <td>3</td>
+        <td>5000</td>
         <td>○</td>
         <td>○</td>
-        <td>人望 <code>+10</code></td>
+        <td>武力 <code>+1</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>三尖両刃刀</td>
+        <td>4</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>鎖鉄球</td>
+        <td>3</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>麒麟牙</td>
+        <td>3</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>流星槌</td>
+        <td>3</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>金蛇剣</td>
+        <td>3</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>飛燕</td>
+        <td>3</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>古錠刀</td>
+        <td>3</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>柳葉刀</td>
+        <td>3</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>鳳嘴刀</td>
+        <td>3</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>武力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>蚩尤砕</td>
+        <td>2</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>玄鉄剣</td>
+        <td>2</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>碧銘剣</td>
+        <td>2</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>青紅の剣</td>
+        <td>2</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>倚天剣</td>
+        <td>2</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>雌雄一対の剣</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>竜胆</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>青龍堰月刀</td>
+        <td>2</td>
+        <td>78000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+15</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>方天画戟</td>
+        <td>1</td>
+        <td>105000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+20</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>神龍の剣</td>
+        <td>1</td>
+        <td>105000</td>
+        <td></td>
+        <td>○</td>
+        <td>武力 <code>+20</code></td>
+        <td></td>
+        <td></td>
+        <td>武</td>
+        </tr>
+        <tr class="odd">
+        <td>平蛮指掌図</td>
+        <td>4</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>太平妖術の書</td>
+        <td>4</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>墨子</td>
+        <td>4</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>六韜</td>
+        <td>4</td>
+        <td>15000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+3</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>西蜀地形図</td>
+        <td>4</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>遁甲天書</td>
+        <td>4</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>孫子の兵法書</td>
+        <td>4</td>
+        <td>28000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>知力 <code>+5</code></td>
         <td>○</td>
         <td>○</td>
         <td></td>
         </tr>
         <tr class="even">
         <td>十六国春秋</td>
-        <td>8</td>
+        <td>4</td>
         <td>28000</td>
         <td>○</td>
         <td>○</td>
@@ -78,7 +408,7 @@
         </tr>
         <tr class="odd">
         <td>春秋左氏伝</td>
-        <td>8</td>
+        <td>4</td>
         <td>28000</td>
         <td>○</td>
         <td>○</td>
@@ -89,11 +419,11 @@
         </tr>
         <tr class="even">
         <td>呂氏春秋</td>
-        <td>8</td>
-        <td>28000</td>
+        <td>4</td>
+        <td>55000</td>
         <td>○</td>
         <td>○</td>
-        <td>知力 <code>+5</code></td>
+        <td>知力 <code>+10</code></td>
         <td>○</td>
         <td>○</td>
         <td></td>
@@ -101,6 +431,28 @@
         <tr class="odd">
         <td>呉越春秋</td>
         <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>青嚢書</td>
+        <td>4</td>
+        <td>55000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td>孟徳新書</td>
+        <td>3</td>
         <td>55000</td>
         <td></td>
         <td>○</td>
@@ -143,6 +495,39 @@
         <td></td>
         </tr>
         <tr class="odd">
+        <td>信仰新書</td>
+        <td>1</td>
+        <td>105000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+20</code></td>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td>三国志</td>
+        <td>1</td>
+        <td>105000</td>
+        <td></td>
+        <td>○</td>
+        <td>知力 <code>+20</code></td>
+        <td></td>
+        <td></td>
+        <td>文</td>
+        </tr>
+        <tr class="odd">
+        <td>傷寒論</td>
+        <td>8</td>
+        <td>36000</td>
+        <td>○</td>
+        <td>○</td>
+        <td>人望 <code>+10</code></td>
+        <td>○</td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr class="even">
         <td>易経</td>
         <td>4</td>
         <td>55000</td>
@@ -153,7 +538,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>書経</td>
         <td>4</td>
         <td>55000</td>
@@ -164,7 +549,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>詩経</td>
         <td>4</td>
         <td>55000</td>
@@ -175,7 +560,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>楽経</td>
         <td>4</td>
         <td>55000</td>
@@ -186,7 +571,7 @@
         <td>○</td>
         <td>文</td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>礼記</td>
         <td>4</td>
         <td>55000</td>
@@ -197,7 +582,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>茶</td>
         <td>8</td>
         <td>10000</td>
@@ -208,7 +593,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>青釉穀倉罐</td>
         <td>8</td>
         <td>10000</td>
@@ -219,7 +604,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>酒杯</td>
         <td>8</td>
         <td>10000</td>
@@ -230,7 +615,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>算盤</td>
         <td>4</td>
         <td>20000</td>
@@ -241,7 +626,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>呂氏鏡</td>
         <td>4</td>
         <td>20000</td>
@@ -252,7 +637,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>博山炉</td>
         <td>2</td>
         <td>30000</td>
@@ -263,7 +648,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>金象嵌の壺</td>
         <td>2</td>
         <td>30000</td>
@@ -274,7 +659,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>玉龍紋璧</td>
         <td>2</td>
         <td>30000</td>
@@ -285,7 +670,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>九錫</td>
         <td>1</td>
         <td>50000</td>
@@ -296,7 +681,7 @@
         <td>○</td>
         <td></td>
         </tr>
-        <tr class="odd">
+        <tr class="even">
         <td>和氏の璧</td>
         <td>1</td>
         <td>200000</td>
@@ -307,7 +692,7 @@
         <td>○</td>
         <td>商</td>
         </tr>
-        <tr class="even">
+        <tr class="odd">
         <td>中行説の霊</td>
         <td>1</td>
         <td>5,000,000</td>
@@ -423,7 +808,7 @@
         </tr>
         <tr class="even">
         <td>商人Lv.2</td>
-        <td>5</td>
+        <td>11</td>
         <td>米売買上限 <code>+5000</code>、貢献 <code>+15</code></td>
         </tr>
         <tr class="odd">
@@ -433,12 +818,12 @@
         </tr>
         <tr class="even">
         <td>商人Lv.4</td>
-        <td>15</td>
+        <td>10</td>
         <td>コマンド 都市投資</td>
         </tr>
         <tr class="odd">
         <td>商人Lv.5</td>
-        <td>15</td>
+        <td>9</td>
         <td>米売買上限 <code>+3000</code></td>
         </tr>
         </tbody>
@@ -455,8 +840,10 @@
         </ul>
         <h3 id="変更">変更</h3>
         <ul>
-        <li>他国武将へのアイテム譲渡を許可</li>
-        <li>人望が <code>150</code> 未満の場合、緊急米施し実行による貢献 <code>30</code></li>
+        <li>都市投資で入手するアイテムを保留状態に切り替え</li>
+        <li>無所属武将による都市投資で内政値の上昇を停止</li>
+        <li>井闌と戦闘時の陣形経験値調整（軽歩兵と同等）</li>
+        <li>登録時初期陣形ポイント <code>300</code></li>
         </ul>
         <h4 id="コマンド実行時のアイテム入手確率">コマンド実行時のアイテム入手確率</h4>
         <table>
@@ -515,7 +902,32 @@
         </table>
         <h3 id="修正">修正</h3>
         <ul>
-        <li>武官Lv.3で剣兵が無料で徴兵できる問題</li>
+        <li>武官Lv.3で徴兵価格が画面に正常反映されない問題</li>
+        </ul>
+        <h2 id="延期">延期</h2>
+        <h3 id="第08期の更新開始前に対応予定">第0.8期の更新開始前に対応予定</h3>
+        <ul>
+        <li>陣形経験値の計算式変更
+        <ul>
+        <li>自分の兵種と兵数から算出されるポイント：相手の丙種と兵数から算出されるポイント＝６：４</li>
+        </ul></li>
+        </ul>
+        <h3 id="第09期以降に持ち越し">第0.9期以降に持ち越し</h3>
+        <ul>
+        <li>他国武将へのアイテム譲渡を許可</li>
+        </ul>
+        <h4 id="第08期のうちに対応の可能性あり">第0.8期のうちに対応の可能性あり</h4>
+        <ul>
+        <li>兵種の名前
+        <ul>
+        <li>軽戟兵 → 軽歩兵</li>
+        <li>重戟兵 → 重歩兵</li>
+        </ul></li>
+        <li>異民族が戦争に勝つことで別の国が統一条件を満たした場合
+        <ul>
+        <li>統一ログに異民族の国名が出る問題</li>
+        <li>統一記録で異民族が統一国として記録されることがある問題</li>
+        </ul></li>
         </ul>
       </div>
 

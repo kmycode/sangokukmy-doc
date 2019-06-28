@@ -35,7 +35,7 @@ category: 0
   * [都市投資](bas-towninvest.html)
 * 手紙
 * 会議室
-* 統一とリセット
+* [統一とリセット](bas-unified.html)
 * 用語集
 
 #### その他
