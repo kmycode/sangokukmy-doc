@@ -1,5 +1,5 @@
 ---
-pagetitle: 第0.8期の実装予定
+pagetitle: 第0.10期の実装予定
 category: 4
 ---
 
