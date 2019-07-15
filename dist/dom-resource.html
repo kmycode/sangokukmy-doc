@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>資源 - 三国志NET KMY Version Documentation</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+
+<header>
+  <div id="site-title">
+    三国志NET KMY Version Documentation
+  </div>
+</header>
+
+<!--
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
+
+      <div id="category-group" class="category-pick category-pick-2">
+        <div class="category category-2">資源</div>
+      </div>
+
+      <div id="category-nav-group" class="category-menu category-menu-picked-2">
+        <a class="category-menu-item category-1" href="index.html">基本</a>
+        <a class="category-menu-item category-2" href="index.html">内政</a>
+        <a class="category-menu-item category-3" href="index.html">対外</a>
+        <a class="category-menu-item category-4" href="index.html">その他</a>
+      </div>
+
+      <div id="article" class="theme-2">
+        <h2 id="概要">概要</h2>
+        <p>特殊な<a href="bas-item.html">アイテム</a>の一種として、資源が存在します。資源はその性質上、特殊な扱いを受けます。</p>
+        <h2 id="できること">できること</h2>
+        <p>資源があると、以下のことが出来ます。</p>
+        <ul>
+        <li>特定の兵種を安く徴兵できる</li>
+        <li>普段徴兵できない特定の兵種を徴兵できる</li>
+        <li>その他、特定コマンドを実行できる、そのときの助けになるなど</li>
+        </ul>
+        <p>一方で、資源は数に限りがあり、たくさん使うとなくなってしまいます。その場合は、新たに資源を入手する必要があります。</p>
+        <h3 id="資源レベル">資源レベル</h3>
+        <p>資源にはレベルが存在しますが、基本的には、資源の効果を相対的に数値として示したものにすぎません。<br />
+        例えば、重騎兵の徴兵価格を30%下げる資源、50%下げる資源が存在する場合、30%下げる資源はレベルが <code>1</code>、50%下げる資源はレベルが <code>2</code>となります。レベルが高いほど、効果を受ける対象は同じでも、より強い効果がのぞめます。</p>
+        <p>資源レベルはそれ自体に特に意味を持ちませんが、後述する資源消費時の優先順位に影響します。</p>
+        <h2 id="入手手段">入手手段</h2>
+        <ul>
+        <li>特定の<a href="bas-from.html">出身</a>の武将が資源を生成／合成する</li>
+        <li><a href="bas-item.html">アイテム</a>の一つとして発見する／市場から購入する</li>
+        </ul>
+        <h2 id="アイテムとしての資源">アイテムとしての資源</h2>
+        <p>資源は、アイテムと同様の扱いを受けます。そのため、武将が所持可能なアイテム数を圧迫する反面、アイテム同様、以下のことが出来ます。</p>
+        <ul>
+        <li>武将への譲渡</li>
+        <li>市場への売却</li>
+        </ul>
+        <p>ただし、資源の残り量はアイテム個体ごとに決められており、売却時の値段も資源の残りによって減ります。<br />
+        また、すべての資源を使い尽くすと、そのアイテムは消滅します。</p>
+        <h3 id="複数資源所持時の優先順位">複数資源所持時の優先順位</h3>
+        <p>１人の武将が同じような効果をもたらす資源を同時に複数所持している場合、以下の優先順位で資源は適用されます。</p>
+        <ol>
+        <li>資源レベルの高いアイテムを優先的に使用</li>
+        <li>資源レベルの同じアイテムが複数ある場合、残り量の少ないアイテムを優先的に使用</li>
+        </ol>
+        <h2 id="資源一覧">資源一覧</h2>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>名前</th>
+        <th>資源レベル</th>
+        <th>効果</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>装備戟</td>
+        <td>1</td>
+        <td>重戟兵 <code>1000</code> の徴兵時価格 <code>-30%</code></td>
+        </tr>
+        <tr class="even">
+        <td>装備馬</td>
+        <td>1</td>
+        <td>重騎兵 <code>1000</code> の徴兵時価格 <code>-30%</code></td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+
+      <div id="article-footer">
+        <a href="./index.html">総合目次</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    三国志NET Ver2.7 <a href="http://www3.to/maccyu2/" target="_top">maccyu</a><br>
+    三国志NET KMY Version (since 2006.8.21)<br>
+    Administered by 雪あすか(KMY) <a href="https://twitter.com/kmysangoku">公式Twitter</a> / <a href="https://twitter.com/askyq">緊急連絡先</a>
+  </div>
+</footer>
+
+</body>
+</html>

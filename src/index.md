@@ -20,7 +20,8 @@ category: 0
   * [内政](bas-g-domestic.html)
   * [戦争](bas-g-war.html)
 * [武将の役割分担](bas-jobs.html)
-* [画面の見方](bas-ui.html)
+* **[画面の見方](bas-ui.html)**
+  * [原作との画面の対照表](bas-ui-original.html)
 
 #### 基本事項
 * 役職
@@ -92,3 +93,4 @@ category: 0
 * [傀儡国家](dip-puppet.html)
 * 取引
 * 割譲
+* [資源](dom-resource.html)
