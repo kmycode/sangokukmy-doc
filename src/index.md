@@ -87,7 +87,7 @@ category: 0
 ### その他
 * [利用規約](oth-termsofservice.html)
 * [プライバシーポリシー](oth-privacypolicy.html)
-* [第0.8期実装概要](oth-plan.html)
+* [第0.10期実装概要](oth-plan.html)
 
 #### ドラフト（実装予定／計画中）
 * [傀儡国家](dip-puppet.html)
