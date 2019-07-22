@@ -31,6 +31,7 @@ category: 0
   * 入力時判定と実行時判定
 * [アイテム](bas-item.html)
   * [アイテム一覧](bas-items.html)
+  * [資源](bas-resource.html)
 * [出身](bas-from.html)
   * [都市巡回](bas-townpatrol.html)
   * [都市投資](bas-towninvest.html)
@@ -87,10 +88,9 @@ category: 0
 ### その他
 * [利用規約](oth-termsofservice.html)
 * [プライバシーポリシー](oth-privacypolicy.html)
-* [第0.10期実装概要](oth-plan.html)
+* [第2期実装概要](oth-plan.html)
 
 #### ドラフト（実装予定／計画中）
 * [傀儡国家](dip-puppet.html)
 * 取引
 * 割譲
-* [資源](dom-resource.html)

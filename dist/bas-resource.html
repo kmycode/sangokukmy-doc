@@ -23,18 +23,18 @@
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0">
 
-      <div id="category-group" class="category-pick category-pick-2">
-        <div class="category category-2">資源</div>
+      <div id="category-group" class="category-pick category-pick-1">
+        <div class="category category-1">資源</div>
       </div>
 
-      <div id="category-nav-group" class="category-menu category-menu-picked-2">
+      <div id="category-nav-group" class="category-menu category-menu-picked-1">
         <a class="category-menu-item category-1" href="index.html">基本</a>
         <a class="category-menu-item category-2" href="index.html">内政</a>
         <a class="category-menu-item category-3" href="index.html">対外</a>
         <a class="category-menu-item category-4" href="index.html">その他</a>
       </div>
 
-      <div id="article" class="theme-2">
+      <div id="article" class="theme-1">
         <h2 id="概要">概要</h2>
         <p>特殊な<a href="bas-item.html">アイテム</a>の一種として、資源が存在します。資源はその性質上、特殊な扱いを受けます。</p>
         <h2 id="できること">できること</h2>
@@ -44,7 +44,25 @@
         <li>普段徴兵できない特定の兵種を徴兵できる</li>
         <li>その他、特定コマンドを実行できる、そのときの助けになるなど</li>
         </ul>
-        <p>一方で、資源は数に限りがあり、たくさん使うとなくなってしまいます。その場合は、新たに資源を入手する必要があります。</p>
+        <h3 id="資源の量">資源の量</h3>
+        <p>資源は量に限りがあり、たくさん使うとなくなってしまいます。その場合は、新たに資源を入手する必要があります。<br />
+        資源量は一般に、以下のような消費の仕方をします。</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>種別</th>
+        <th>消費単位</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>徴兵</td>
+        <td>兵 <code>1</code> あたり資源 <code>1</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <p>アイテム出現時（リセット時または製造時など）、資源の量はデフォルトで、<a href="bas-items.html">アイテム一覧</a>にて別途指定された値（標準量）になります。<br />
+        また、資源の量はアイテムとしての資源の価格に影響します。詳細は別項を参照してください。</p>
         <h3 id="資源レベル">資源レベル</h3>
         <p>資源にはレベルが存在しますが、基本的には、資源の効果を相対的に数値として示したものにすぎません。<br />
         例えば、重騎兵の徴兵価格を30%下げる資源、50%下げる資源が存在する場合、30%下げる資源はレベルが <code>1</code>、50%下げる資源はレベルが <code>2</code>となります。レベルが高いほど、効果を受ける対象は同じでも、より強い効果がのぞめます。</p>
@@ -62,6 +80,9 @@
         </ul>
         <p>ただし、資源の残り量はアイテム個体ごとに決められており、売却時の値段も資源の残りによって減ります。<br />
         また、すべての資源を使い尽くすと、そのアイテムは消滅します。</p>
+        <h3 id="価格">価格</h3>
+        <p>資源を市場で購入するときの価格は、資源量と単価をかけあわせた数字になります。例えば単価が <code>18</code>、量が <code>1000</code> の資源の価格は <code>18000</code> になります。<br />
+        資源を消費すると、それだけ価格も安くなっていきます。</p>
         <h3 id="複数資源所持時の優先順位">複数資源所持時の優先順位</h3>
         <p>１人の武将が同じような効果をもたらす資源を同時に複数所持している場合、以下の優先順位で資源は適用されます。</p>
         <ol>
@@ -69,27 +90,7 @@
         <li>資源レベルの同じアイテムが複数ある場合、残り量の少ないアイテムを優先的に使用</li>
         </ol>
         <h2 id="資源一覧">資源一覧</h2>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>名前</th>
-        <th>資源レベル</th>
-        <th>効果</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>装備戟</td>
-        <td>1</td>
-        <td>重戟兵 <code>1000</code> の徴兵時価格 <code>-30%</code></td>
-        </tr>
-        <tr class="even">
-        <td>装備馬</td>
-        <td>1</td>
-        <td>重騎兵 <code>1000</code> の徴兵時価格 <code>-30%</code></td>
-        </tr>
-        </tbody>
-        </table>
+        <p><a href="bas-items.html">アイテム一覧</a>を参照してください。</p>
       </div>
 
       <div id="article-footer">
